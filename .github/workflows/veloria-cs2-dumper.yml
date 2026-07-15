@@ -59,7 +59,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
+          git add manifest.json manifest.js maps/ characters/ icons/ 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "Нет изменений — buildid не изменился"
           else
