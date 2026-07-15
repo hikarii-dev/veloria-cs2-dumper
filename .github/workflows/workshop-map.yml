@@ -1,0 +1,115 @@
+name: workshop-map
+
+on:
+  workflow_dispatch:
+    inputs:
+      workshop_id:
+        description: "Steam Workshop item ID"
+        required: true
+        type: string
+      map_name:
+        description: "CS2 map name (e.g. aim_botz)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+env:
+  RUST_BACKTRACE: "1"
+
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout veloria-cs2-maps
+        uses: actions/checkout@v4
+        with:
+          path: maps-repo
+
+      - name: Check if already processed
+        id: check
+        run: |
+          OUTPUT="maps-repo/workshop/${{ inputs.workshop_id }}"
+          if [ -f "$OUTPUT/radar.png" ] || [ -f "$OUTPUT/no_radar.txt" ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+            echo "Already processed workshop ${{ inputs.workshop_id }}, skipping."
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Checkout private repo (dumper source)
+        if: steps.check.outputs.skip != 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ secrets.PRIVATE_REPO_NAME }}
+          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          path: cowork
+
+      - name: Install SteamCMD
+        if: steps.check.outputs.skip != 'true'
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y lib32gcc-s1
+          mkdir -p "$RUNNER_TEMP/steamcmd"
+          cd "$RUNNER_TEMP/steamcmd"
+          curl -sSL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar xz
+          ./steamcmd.sh +quit || true
+
+      - name: Download workshop VPK via SteamCMD
+        if: steps.check.outputs.skip != 'true'
+        run: |
+          STEAM_DIR="$RUNNER_TEMP/steamcmd"
+          WORKSHOP_CONTENT="$STEAM_DIR/steamapps/workshop/content/730"
+          "$STEAM_DIR/steamcmd.sh" \
+            +force_install_dir "$STEAM_DIR" \
+            +login anonymous \
+            +workshop_download_item 730 ${{ inputs.workshop_id }} \
+            +quit || true
+          WORKSHOP_DIR="$WORKSHOP_CONTENT/${{ inputs.workshop_id }}"
+          echo "Workshop dir contents:"
+          ls -la "$WORKSHOP_DIR" || echo "(empty or missing)"
+          VPK_FILE=$(find "$WORKSHOP_DIR" -name "*_dir.vpk" | head -1)
+          if [ -z "$VPK_FILE" ]; then
+            VPK_FILE=$(find "$WORKSHOP_DIR" -name "*.vpk" | head -1)
+          fi
+          if [ -z "$VPK_FILE" ]; then
+            echo "ERROR: No VPK found for workshop item ${{ inputs.workshop_id }}"
+            exit 1
+          fi
+          echo "Found VPK: $VPK_FILE"
+          echo "VPK_FILE=$VPK_FILE" >> $GITHUB_ENV
+
+      - name: Rust toolchain
+        if: steps.check.outputs.skip != 'true'
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Rust cache
+        if: steps.check.outputs.skip != 'true'
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: "cowork/cs2/veloria-cs2-dumper -> target"
+
+      - name: Run dumper
+        if: steps.check.outputs.skip != 'true'
+        working-directory: cowork/cs2/veloria-cs2-dumper
+        run: |
+          cargo run --profile dumper -- \
+            --workshop-id "${{ inputs.workshop_id }}" \
+            --workshop-path "$VPK_FILE" \
+            --workshop-output "$GITHUB_WORKSPACE/maps-repo"
+
+      - name: Commit radar data
+        run: |
+          cd maps-repo
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add workshop/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "add map ${{ inputs.map_name }} (${{ inputs.workshop_id }})"
+            git push
+          fi
