@@ -1,0 +1,79 @@
+name: veloria-cs2-dumper
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Пересобрать даже если buildid не изменился (--force)"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+env:
+  RUST_BACKTRACE: "1"
+
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout veloria-cs2-maps (this repo, output)
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout Cowork (Rust source)
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ secrets.PRIVATE_REPO_NAME }}
+          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          path: Cowork
+
+      - name: Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Rust cache
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: "Cowork/cs2/veloria-cs2-dumper -> target"
+
+      - name: Run dumper
+        working-directory: Cowork/cs2/veloria-cs2-dumper
+        run: |
+          FORCE=""
+          if [ "${{ inputs.force }}" = "true" ]; then
+            FORCE="--force"
+          fi
+          cargo run --profile dumper -- \
+            --tmp "$RUNNER_TEMP/cs2_depot" \
+            --output "$GITHUB_WORKSPACE" \
+            $FORCE
+
+      - name: Commit updated maps
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "Нет изменений — buildid не изменился"
+          else
+            BUILDID=$(node -e "try{console.log(JSON.parse(require('fs').readFileSync('manifest.json','utf8')).buildid)}catch{console.log('?')}" 2>/dev/null || echo "?")
+            git commit -m "chore: cs2 assets update (buildid=${BUILDID}) [skip ci]"
+            git push
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cs2-templates-${{ github.run_number }}
+          path: |
+            manifest.json
+            maps/
+          if-no-files-found: warn

@@ -8,8 +8,12 @@ on:
         required: true
         type: string
       map_name:
-        description: "CS2 map name (e.g. aim_botz)"
+        description: "CS2 map name (source_folder, e.g. cs2_aim3)"
         required: true
+        type: string
+      publish_time:
+        description: "publish_time from publish_data.txt (unix timestamp). Used to detect map updates."
+        required: false
         type: string
 
 permissions:
@@ -24,18 +28,25 @@ jobs:
     timeout-minutes: 30
 
     steps:
-      - name: Checkout veloria-cs2-maps
+      - name: Checkout veloria-cs2-maps (this repo, output)
         uses: actions/checkout@v4
         with:
-          path: maps-repo
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Check if already processed
         id: check
         run: |
-          OUTPUT="maps-repo/workshop/${{ inputs.workshop_id }}"
+          OUTPUT="$GITHUB_WORKSPACE/workshop/${{ inputs.workshop_id }}"
           if [ -f "$OUTPUT/radar.png" ] || [ -f "$OUTPUT/no_radar.txt" ]; then
-            echo "skip=true" >> $GITHUB_OUTPUT
-            echo "Already processed workshop ${{ inputs.workshop_id }}, skipping."
+            STORED_PT=$(node -e "try{console.log(JSON.parse(require('fs').readFileSync('$OUTPUT/data.json','utf8')).publish_time||'')}catch{console.log('')}" 2>/dev/null || echo "")
+            INPUT_PT="${{ inputs.publish_time }}"
+            if [ -z "$INPUT_PT" ] || [ "$STORED_PT" = "$INPUT_PT" ]; then
+              echo "skip=true" >> $GITHUB_OUTPUT
+              echo "Already processed workshop ${{ inputs.workshop_id }} (publish_time=$STORED_PT), skipping."
+            else
+              echo "skip=false" >> $GITHUB_OUTPUT
+              echo "Workshop ${{ inputs.workshop_id }} updated: stored=$STORED_PT, new=$INPUT_PT. Reprocessing."
+            fi
           else
             echo "skip=false" >> $GITHUB_OUTPUT
           fi
@@ -43,24 +54,22 @@ jobs:
       - name: Clear stale error marker
         if: steps.check.outputs.skip != 'true'
         run: |
-          ERROR_FILE="maps-repo/workshop/${{ inputs.workshop_id }}/error.txt"
+          ERROR_FILE="$GITHUB_WORKSPACE/workshop/${{ inputs.workshop_id }}/error.txt"
           if [ -f "$ERROR_FILE" ]; then
-            cd maps-repo
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git rm "workshop/${{ inputs.workshop_id }}/error.txt"
             git commit -m "retry: ${{ inputs.map_name }} (${{ inputs.workshop_id }})"
             git push
-            cd ..
           fi
 
-      - name: Checkout private repo (dumper source)
+      - name: Checkout Cowork (Rust source)
         if: steps.check.outputs.skip != 'true'
         uses: actions/checkout@v4
         with:
           repository: ${{ secrets.PRIVATE_REPO_NAME }}
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
-          path: cowork
+          path: Cowork
 
       - name: Cache SteamCMD
         if: steps.check.outputs.skip != 'true'
@@ -87,15 +96,20 @@ jobs:
         if: steps.check.outputs.skip != 'true'
         run: |
           STEAM_DIR="$RUNNER_TEMP/steamcmd"
+          WORKSHOP_CONTENT="$STEAM_DIR/steamapps/workshop/content/730"
           "$STEAM_DIR/steamcmd.sh" \
+            +force_install_dir "$STEAM_DIR" \
             +login anonymous \
             +workshop_download_item 730 ${{ inputs.workshop_id }} \
             +quit || true
-          # Workshop items go to Steam's default dir, not force_install_dir
-          WORKSHOP_DIR=$(find "$HOME/Steam" "$STEAM_DIR" -path "*/workshop/content/730/${{ inputs.workshop_id }}" -type d 2>/dev/null | head -1)
-          echo "Workshop dir: $WORKSHOP_DIR"
+          WORKSHOP_DIR="$WORKSHOP_CONTENT/${{ inputs.workshop_id }}"
+          echo "Workshop dir contents:"
           ls -la "$WORKSHOP_DIR" || echo "(empty or missing)"
+          # Prefer *_dir.vpk (multi-part archive header) over chunk files (*_000.vpk etc.)
           VPK_FILE=$(find "$WORKSHOP_DIR" -name "*_dir.vpk" 2>/dev/null | head -1)
+          if [ -z "$VPK_FILE" ]; then
+            VPK_FILE=$(find "$WORKSHOP_DIR" -name "*.vpk" 2>/dev/null | grep -v '_[0-9]\{3\}\.vpk$' | head -1)
+          fi
           if [ -z "$VPK_FILE" ]; then
             VPK_FILE=$(find "$WORKSHOP_DIR" -name "*.vpk" 2>/dev/null | head -1)
           fi
@@ -114,20 +128,24 @@ jobs:
         if: steps.check.outputs.skip != 'true'
         uses: Swatinem/rust-cache@v2
         with:
-          workspaces: "cowork/cs2/veloria-cs2-dumper -> target"
+          workspaces: "Cowork/cs2/veloria-cs2-dumper -> target"
 
-      - name: Run dumper
+      - name: Run dumper (workshop mode)
         if: steps.check.outputs.skip != 'true'
-        working-directory: cowork/cs2/veloria-cs2-dumper
+        working-directory: Cowork/cs2/veloria-cs2-dumper
         run: |
+          PT_FLAG=""
+          if [ -n "${{ inputs.publish_time }}" ]; then
+            PT_FLAG="--publish-time ${{ inputs.publish_time }}"
+          fi
           cargo run --profile dumper -- \
             --workshop-id "${{ inputs.workshop_id }}" \
             --workshop-path "$VPK_FILE" \
-            --workshop-output "$GITHUB_WORKSPACE/maps-repo"
+            --workshop-output "$GITHUB_WORKSPACE" \
+            $PT_FLAG
 
       - name: Commit radar data
         run: |
-          cd maps-repo
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git rm --ignore-unmatch "workshop/${{ inputs.workshop_id }}/error.txt" 2>/dev/null || true
@@ -135,14 +153,13 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "add map ${{ inputs.map_name }} (${{ inputs.workshop_id }})"
+            git commit -m "feat: workshop map ${{ inputs.map_name }} (${{ inputs.workshop_id }}) pt=${{ inputs.publish_time }} [skip ci]"
             git push
           fi
 
       - name: Commit error marker on failure
         if: failure()
         run: |
-          cd maps-repo
           mkdir -p "workshop/${{ inputs.workshop_id }}"
           echo "workflow failed" > "workshop/${{ inputs.workshop_id }}/error.txt"
           git config user.name "github-actions[bot]"
