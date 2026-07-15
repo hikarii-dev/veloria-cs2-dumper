@@ -48,32 +48,42 @@ jobs:
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           path: cowork
 
+      - name: Cache SteamCMD
+        if: steps.check.outputs.skip != 'true'
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/steamcmd
+          key: steamcmd-linux-v1
+
       - name: Install SteamCMD
         if: steps.check.outputs.skip != 'true'
         run: |
           sudo apt-get update -y
           sudo apt-get install -y lib32gcc-s1
-          mkdir -p "$RUNNER_TEMP/steamcmd"
-          cd "$RUNNER_TEMP/steamcmd"
-          curl -sSL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar xz
-          ./steamcmd.sh +quit || true
+          if [ ! -f "$RUNNER_TEMP/steamcmd/steamcmd.sh" ]; then
+            mkdir -p "$RUNNER_TEMP/steamcmd"
+            cd "$RUNNER_TEMP/steamcmd"
+            curl -sSL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar xz
+            ./steamcmd.sh +quit || true
+          else
+            echo "SteamCMD already cached, skipping download."
+          fi
 
       - name: Download workshop VPK via SteamCMD
         if: steps.check.outputs.skip != 'true'
         run: |
           STEAM_DIR="$RUNNER_TEMP/steamcmd"
-          WORKSHOP_CONTENT="$STEAM_DIR/steamapps/workshop/content/730"
           "$STEAM_DIR/steamcmd.sh" \
-            +force_install_dir "$STEAM_DIR" \
             +login anonymous \
             +workshop_download_item 730 ${{ inputs.workshop_id }} \
             +quit || true
-          WORKSHOP_DIR="$WORKSHOP_CONTENT/${{ inputs.workshop_id }}"
-          echo "Workshop dir contents:"
+          # Workshop items go to Steam's default dir, not force_install_dir
+          WORKSHOP_DIR=$(find "$HOME/Steam" "$STEAM_DIR" -path "*/workshop/content/730/${{ inputs.workshop_id }}" -type d 2>/dev/null | head -1)
+          echo "Workshop dir: $WORKSHOP_DIR"
           ls -la "$WORKSHOP_DIR" || echo "(empty or missing)"
-          VPK_FILE=$(find "$WORKSHOP_DIR" -name "*_dir.vpk" | head -1)
+          VPK_FILE=$(find "$WORKSHOP_DIR" -name "*_dir.vpk" 2>/dev/null | head -1)
           if [ -z "$VPK_FILE" ]; then
-            VPK_FILE=$(find "$WORKSHOP_DIR" -name "*.vpk" | head -1)
+            VPK_FILE=$(find "$WORKSHOP_DIR" -name "*.vpk" 2>/dev/null | head -1)
           fi
           if [ -z "$VPK_FILE" ]; then
             echo "ERROR: No VPK found for workshop item ${{ inputs.workshop_id }}"
