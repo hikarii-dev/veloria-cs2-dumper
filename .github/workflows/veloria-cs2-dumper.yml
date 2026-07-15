@@ -41,10 +41,10 @@ jobs:
       - name: Rust cache
         uses: Swatinem/rust-cache@v2
         with:
-          workspaces: "Cowork/cs2/veloria-cs2-dumper -> target"
+          workspaces: "Cowork/games/cs2/sdk/veloria-cs2-dumper -> target"
 
       - name: Run dumper
-        working-directory: Cowork/cs2/veloria-cs2-dumper
+        working-directory: Cowork/games/cs2/sdk/veloria-cs2-dumper
         run: |
           FORCE=""
           if [ "${{ inputs.force }}" = "true" ]; then
