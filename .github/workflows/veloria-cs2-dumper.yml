@@ -48,7 +48,7 @@ jobs:
           done
           exit 1
 
-      - name: Checkout veloria-cs2-maps (this repo, output)
+      - name: Checkout veloria-cs2-dumper (this repo, output)
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
