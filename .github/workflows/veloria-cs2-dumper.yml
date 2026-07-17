@@ -75,7 +75,7 @@ jobs:
           if [ "${{ inputs.force }}" = "true" ]; then
             FORCE="--force"
           fi
-          cargo run --profile dumper -- \
+          cargo run --profile dumper --bin veloria-cs2-dumper -- \
             --tmp "$RUNNER_TEMP/cs2_depot" \
             --output "$GITHUB_WORKSPACE" \
             $FORCE
