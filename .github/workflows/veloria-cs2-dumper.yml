@@ -63,10 +63,22 @@ jobs:
       - name: Rust toolchain
         uses: dtolnay/rust-toolchain@stable
 
-      - name: Rust cache
+      - name: Cache Cargo registry
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry/index
+            ~/.cargo/registry/cache
+            ~/.cargo/git/db
+          key: cargo-registry-${{ runner.os }}-${{ hashFiles('_src/**/*.lock') }}
+          restore-keys: |
+            cargo-registry-${{ runner.os }}-
+
+      - name: Rust build cache
         uses: Swatinem/rust-cache@v2
         with:
           workspaces: "_src/${{ secrets.DUMPER_PATH }} -> target"
+          cache-on-failure: true
 
       - name: Run dumper
         working-directory: _src/${{ secrets.DUMPER_PATH }}
