@@ -3,8 +3,14 @@
     "classes": {
       "CSSDSEndFrameViewInfo": {
         "fields": {
-          "m_ViewName": 8,
-          "m_nViewId": 0
+          "m_ViewName": {
+            "offset": 8,
+            "type": "CUtlString"
+          },
+          "m_nViewId": {
+            "offset": 0,
+            "type": "uint64"
+          }
         },
         "metadata": [
           {
@@ -16,7 +22,10 @@
       },
       "CSSDSMsg_EndFrame": {
         "fields": {
-          "m_Views": 0
+          "m_Views": {
+            "offset": 0,
+            "type": "CUtlVector<CSSDSEndFrameViewInfo>"
+          }
         },
         "metadata": [
           {
@@ -28,11 +37,26 @@
       },
       "CSSDSMsg_LayerBase": {
         "fields": {
-          "m_LayerName": 32,
-          "m_ViewName": 16,
-          "m_displayText": 40,
-          "m_nLayerId": 24,
-          "m_viewId": 0
+          "m_LayerName": {
+            "offset": 32,
+            "type": "CUtlString"
+          },
+          "m_ViewName": {
+            "offset": 16,
+            "type": "CUtlString"
+          },
+          "m_displayText": {
+            "offset": 40,
+            "type": "CUtlString"
+          },
+          "m_nLayerId": {
+            "offset": 24,
+            "type": "uint64"
+          },
+          "m_viewId": {
+            "offset": 0,
+            "type": "SceneViewId_t"
+          }
         },
         "metadata": [
           {
@@ -64,8 +88,14 @@
       },
       "CSSDSMsg_ViewRender": {
         "fields": {
-          "m_ViewName": 16,
-          "m_viewId": 0
+          "m_ViewName": {
+            "offset": 16,
+            "type": "CUtlString"
+          },
+          "m_viewId": {
+            "offset": 0,
+            "type": "SceneViewId_t"
+          }
         },
         "metadata": [
           {
@@ -77,16 +107,46 @@
       },
       "CSSDSMsg_ViewTarget": {
         "fields": {
-          "m_Name": 0,
-          "m_TextureId": 8,
-          "m_nDepth": 36,
-          "m_nFormat": 44,
-          "m_nHeight": 20,
-          "m_nMultisampleNumSamples": 40,
-          "m_nNumMipLevels": 32,
-          "m_nRequestedHeight": 28,
-          "m_nRequestedWidth": 24,
-          "m_nWidth": 16
+          "m_Name": {
+            "offset": 0,
+            "type": "CUtlString"
+          },
+          "m_TextureId": {
+            "offset": 8,
+            "type": "uint64"
+          },
+          "m_nDepth": {
+            "offset": 36,
+            "type": "int32"
+          },
+          "m_nFormat": {
+            "offset": 44,
+            "type": "int32"
+          },
+          "m_nHeight": {
+            "offset": 20,
+            "type": "int32"
+          },
+          "m_nMultisampleNumSamples": {
+            "offset": 40,
+            "type": "int32"
+          },
+          "m_nNumMipLevels": {
+            "offset": 32,
+            "type": "int32"
+          },
+          "m_nRequestedHeight": {
+            "offset": 28,
+            "type": "int32"
+          },
+          "m_nRequestedWidth": {
+            "offset": 24,
+            "type": "int32"
+          },
+          "m_nWidth": {
+            "offset": 16,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -98,9 +158,18 @@
       },
       "CSSDSMsg_ViewTargetList": {
         "fields": {
-          "m_Targets": 24,
-          "m_ViewName": 16,
-          "m_viewId": 0
+          "m_Targets": {
+            "offset": 24,
+            "type": "CUtlVector<CSSDSMsg_ViewTarget>"
+          },
+          "m_ViewName": {
+            "offset": 16,
+            "type": "CUtlString"
+          },
+          "m_viewId": {
+            "offset": 0,
+            "type": "SceneViewId_t"
+          }
         },
         "metadata": [
           {
@@ -112,8 +181,14 @@
       },
       "SceneViewId_t": {
         "fields": {
-          "m_nFrameCount": 8,
-          "m_nViewId": 0
+          "m_nFrameCount": {
+            "offset": 8,
+            "type": "uint64"
+          },
+          "m_nViewId": {
+            "offset": 0,
+            "type": "uint64"
+          }
         },
         "metadata": [
           {

@@ -1,0 +1,24 @@
+{
+  "build_number": 14171,
+  "modules": [
+    "animationsystem_dll",
+    "client_dll",
+    "engine2_dll",
+    "host_dll",
+    "materialsystem2_dll",
+    "networksystem_dll",
+    "panorama_dll",
+    "particles_dll",
+    "pulse_system_dll",
+    "rendersystemdx11_dll",
+    "resourcesystem_dll",
+    "scenesystem_dll",
+    "schemasystem_dll",
+    "server_dll",
+    "soundsystem_dll",
+    "steamaudio_dll",
+    "vphysics2_dll",
+    "worldrenderer_dll"
+  ],
+  "timestamp": "2026-07-18 23:11:06 UTC"
+}

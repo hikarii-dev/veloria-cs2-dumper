@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-17 07:15:01.867932300 UTC
+// 2026-07-18 23:11:06.835478600 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: rendersystemdx11.dll

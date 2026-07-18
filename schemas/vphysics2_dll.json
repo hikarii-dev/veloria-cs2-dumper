@@ -3,9 +3,18 @@
     "classes": {
       "CFeIndexedJiggleBone": {
         "fields": {
-          "m_jiggleBone": 8,
-          "m_nJiggleParent": 4,
-          "m_nNode": 0
+          "m_jiggleBone": {
+            "offset": 8,
+            "type": "CFeJiggleBone"
+          },
+          "m_nJiggleParent": {
+            "offset": 4,
+            "type": "uint32"
+          },
+          "m_nNode": {
+            "offset": 0,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -17,41 +26,146 @@
       },
       "CFeJiggleBone": {
         "fields": {
-          "m_flAlongDamping": 32,
-          "m_flAlongStiffness": 28,
-          "m_flAngleLimit": 36,
-          "m_flBaseDamping": 80,
-          "m_flBaseForwardFriction": 116,
-          "m_flBaseLeftFriction": 92,
-          "m_flBaseMass": 72,
-          "m_flBaseMaxForward": 112,
-          "m_flBaseMaxLeft": 88,
-          "m_flBaseMaxUp": 100,
-          "m_flBaseMinForward": 108,
-          "m_flBaseMinLeft": 84,
-          "m_flBaseMinUp": 96,
-          "m_flBaseStiffness": 76,
-          "m_flBaseUpFriction": 104,
-          "m_flLength": 4,
-          "m_flMaxPitch": 60,
-          "m_flMaxYaw": 44,
-          "m_flMinPitch": 56,
-          "m_flMinYaw": 40,
-          "m_flPitchBounce": 68,
-          "m_flPitchDamping": 24,
-          "m_flPitchFriction": 64,
-          "m_flPitchStiffness": 20,
-          "m_flRadius0": 120,
-          "m_flRadius1": 124,
-          "m_flTipMass": 8,
-          "m_flYawBounce": 52,
-          "m_flYawDamping": 16,
-          "m_flYawFriction": 48,
-          "m_flYawStiffness": 12,
-          "m_nCollisionMask": 152,
-          "m_nFlags": 0,
-          "m_vPoint0": 128,
-          "m_vPoint1": 140
+          "m_flAlongDamping": {
+            "offset": 32,
+            "type": "float32"
+          },
+          "m_flAlongStiffness": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "m_flAngleLimit": {
+            "offset": 36,
+            "type": "float32"
+          },
+          "m_flBaseDamping": {
+            "offset": 80,
+            "type": "float32"
+          },
+          "m_flBaseForwardFriction": {
+            "offset": 116,
+            "type": "float32"
+          },
+          "m_flBaseLeftFriction": {
+            "offset": 92,
+            "type": "float32"
+          },
+          "m_flBaseMass": {
+            "offset": 72,
+            "type": "float32"
+          },
+          "m_flBaseMaxForward": {
+            "offset": 112,
+            "type": "float32"
+          },
+          "m_flBaseMaxLeft": {
+            "offset": 88,
+            "type": "float32"
+          },
+          "m_flBaseMaxUp": {
+            "offset": 100,
+            "type": "float32"
+          },
+          "m_flBaseMinForward": {
+            "offset": 108,
+            "type": "float32"
+          },
+          "m_flBaseMinLeft": {
+            "offset": 84,
+            "type": "float32"
+          },
+          "m_flBaseMinUp": {
+            "offset": 96,
+            "type": "float32"
+          },
+          "m_flBaseStiffness": {
+            "offset": 76,
+            "type": "float32"
+          },
+          "m_flBaseUpFriction": {
+            "offset": 104,
+            "type": "float32"
+          },
+          "m_flLength": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flMaxPitch": {
+            "offset": 60,
+            "type": "float32"
+          },
+          "m_flMaxYaw": {
+            "offset": 44,
+            "type": "float32"
+          },
+          "m_flMinPitch": {
+            "offset": 56,
+            "type": "float32"
+          },
+          "m_flMinYaw": {
+            "offset": 40,
+            "type": "float32"
+          },
+          "m_flPitchBounce": {
+            "offset": 68,
+            "type": "float32"
+          },
+          "m_flPitchDamping": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_flPitchFriction": {
+            "offset": 64,
+            "type": "float32"
+          },
+          "m_flPitchStiffness": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flRadius0": {
+            "offset": 120,
+            "type": "float32"
+          },
+          "m_flRadius1": {
+            "offset": 124,
+            "type": "float32"
+          },
+          "m_flTipMass": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_flYawBounce": {
+            "offset": 52,
+            "type": "float32"
+          },
+          "m_flYawDamping": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_flYawFriction": {
+            "offset": 48,
+            "type": "float32"
+          },
+          "m_flYawStiffness": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_nCollisionMask": {
+            "offset": 152,
+            "type": "uint16"
+          },
+          "m_nFlags": {
+            "offset": 0,
+            "type": "uint32"
+          },
+          "m_vPoint0": {
+            "offset": 128,
+            "type": "Vector"
+          },
+          "m_vPoint1": {
+            "offset": 140,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -63,13 +177,34 @@
       },
       "CFeMorphLayer": {
         "fields": {
-          "m_GoalDamping": 112,
-          "m_GoalStrength": 88,
-          "m_Gravity": 64,
-          "m_InitPos": 40,
-          "m_Name": 0,
-          "m_Nodes": 16,
-          "m_nNameHash": 8
+          "m_GoalDamping": {
+            "offset": 112,
+            "type": "CUtlVector<float32>"
+          },
+          "m_GoalStrength": {
+            "offset": 88,
+            "type": "CUtlVector<float32>"
+          },
+          "m_Gravity": {
+            "offset": 64,
+            "type": "CUtlVector<float32>"
+          },
+          "m_InitPos": {
+            "offset": 40,
+            "type": "CUtlVector<Vector>"
+          },
+          "m_Name": {
+            "offset": 0,
+            "type": "CUtlString"
+          },
+          "m_Nodes": {
+            "offset": 16,
+            "type": "CUtlVector<uint16>"
+          },
+          "m_nNameHash": {
+            "offset": 8,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -81,10 +216,22 @@
       },
       "CFeNamedJiggleBone": {
         "fields": {
-          "m_jiggleBone": 52,
-          "m_nJiggleParent": 48,
-          "m_strParentBone": 0,
-          "m_transform": 16
+          "m_jiggleBone": {
+            "offset": 52,
+            "type": "CFeJiggleBone"
+          },
+          "m_nJiggleParent": {
+            "offset": 48,
+            "type": "uint32"
+          },
+          "m_strParentBone": {
+            "offset": 0,
+            "type": "CUtlString"
+          },
+          "m_transform": {
+            "offset": 16,
+            "type": "CTransform"
+          }
         },
         "metadata": [
           {
@@ -96,7 +243,10 @@
       },
       "CFeVertexMapBuildArray": {
         "fields": {
-          "m_Array": 0
+          "m_Array": {
+            "offset": 0,
+            "type": "CUtlVector<FeVertexMapBuild_t*>"
+          }
         },
         "metadata": [
           {
@@ -108,15 +258,24 @@
       },
       "CGenericShapeProxy": {
         "fields": {
-          "m_verts": 48
+          "m_verts": {
+            "offset": 48,
+            "type": "CUtlLeanVectorFixedGrowable<Vector,8>"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "CRegionSVM": {
         "fields": {
-          "m_Nodes": 24,
-          "m_Planes": 0
+          "m_Nodes": {
+            "offset": 24,
+            "type": "CUtlVector<uint32>"
+          },
+          "m_Planes": {
+            "offset": 0,
+            "type": "CUtlVector<RnPlane_t>"
+          }
         },
         "metadata": [
           {
@@ -128,12 +287,30 @@
       },
       "CollisionDetailLayerInfo_t": {
         "fields": {
-          "m_bIsQueryOnly": 16,
-          "m_bNotPickable": 56,
-          "m_sDescription": 0,
-          "m_sFriendlyName": 8,
-          "m_sParentDetailLayer": 24,
-          "m_vecSubtreeDetailLayers": 32
+          "m_bIsQueryOnly": {
+            "offset": 16,
+            "type": "bool"
+          },
+          "m_bNotPickable": {
+            "offset": 56,
+            "type": "bool"
+          },
+          "m_sDescription": {
+            "offset": 0,
+            "type": "CUtlString"
+          },
+          "m_sFriendlyName": {
+            "offset": 8,
+            "type": "CUtlString"
+          },
+          "m_sParentDetailLayer": {
+            "offset": 24,
+            "type": "CUtlString"
+          },
+          "m_vecSubtreeDetailLayers": {
+            "offset": 32,
+            "type": "CUtlVector<CollisionDetailLayerInfo_t::Name_t>"
+          }
         },
         "metadata": [
           {
@@ -149,8 +326,14 @@
       },
       "CollisionDetailLayerInfo_t__Name_t": {
         "fields": {
-          "m_nNameToken": 0,
-          "m_sNameString": 8
+          "m_nNameToken": {
+            "offset": 0,
+            "type": "CUtlStringToken"
+          },
+          "m_sNameString": {
+            "offset": 8,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -162,10 +345,22 @@
       },
       "CovMatrix3": {
         "fields": {
-          "m_flXY": 12,
-          "m_flXZ": 16,
-          "m_flYZ": 20,
-          "m_vDiag": 0
+          "m_flXY": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_flXZ": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_flYZ": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_vDiag": {
+            "offset": 0,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -177,7 +372,10 @@
       },
       "Dop26_t": {
         "fields": {
-          "m_flSupport": 0
+          "m_flSupport": {
+            "offset": 0,
+            "type": "float32[26]"
+          }
         },
         "metadata": [
           {
@@ -189,9 +387,18 @@
       },
       "FeAnimStrayRadius_t": {
         "fields": {
-          "flMaxDist": 4,
-          "flRelaxationFactor": 8,
-          "nNode": 0
+          "flMaxDist": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "flRelaxationFactor": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[2]"
+          }
         },
         "metadata": [
           {
@@ -203,8 +410,14 @@
       },
       "FeAntiTunnelGroupBuild_t": {
         "fields": {
-          "m_nCollisionMask": 4,
-          "m_nVertexMapHash": 0
+          "m_nCollisionMask": {
+            "offset": 4,
+            "type": "uint32"
+          },
+          "m_nVertexMapHash": {
+            "offset": 0,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -216,13 +429,34 @@
       },
       "FeAntiTunnelProbeBuild_t": {
         "fields": {
-          "flActivationDistance": 4,
-          "flBias": 8,
-          "flCurvature": 12,
-          "flWeight": 0,
-          "nFlags": 16,
-          "nProbeNode": 20,
-          "targetNodes": 24
+          "flActivationDistance": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "flBias": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "flCurvature": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "flWeight": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "nFlags": {
+            "offset": 16,
+            "type": "uint32"
+          },
+          "nProbeNode": {
+            "offset": 20,
+            "type": "uint16"
+          },
+          "targetNodes": {
+            "offset": 24,
+            "type": "CUtlVector<uint16>"
+          }
         },
         "metadata": [
           {
@@ -234,14 +468,38 @@
       },
       "FeAntiTunnelProbe_t": {
         "fields": {
-          "flActivationDistance": 16,
-          "flBias": 24,
-          "flCurvatureRadius": 20,
-          "flWeight": 0,
-          "nBegin": 12,
-          "nCount": 10,
-          "nFlags": 4,
-          "nProbeNode": 8
+          "flActivationDistance": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "flBias": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "flCurvatureRadius": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "flWeight": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "nBegin": {
+            "offset": 12,
+            "type": "uint32"
+          },
+          "nCount": {
+            "offset": 10,
+            "type": "uint16"
+          },
+          "nFlags": {
+            "offset": 4,
+            "type": "uint32"
+          },
+          "nProbeNode": {
+            "offset": 8,
+            "type": "uint16"
+          }
         },
         "metadata": [
           {
@@ -253,11 +511,26 @@
       },
       "FeAxialEdgeBend_t": {
         "fields": {
-          "flDist": 8,
-          "flWeight": 12,
-          "nNode": 28,
-          "te": 0,
-          "tv": 4
+          "flDist": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "flWeight": {
+            "offset": 12,
+            "type": "float32[4]"
+          },
+          "nNode": {
+            "offset": 28,
+            "type": "uint16[6]"
+          },
+          "te": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "tv": {
+            "offset": 4,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -269,9 +542,18 @@
       },
       "FeBandBendLimit_t": {
         "fields": {
-          "flDistMax": 4,
-          "flDistMin": 0,
-          "nNode": 8
+          "flDistMax": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "flDistMin": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "nNode": {
+            "offset": 8,
+            "type": "uint16[6]"
+          }
         },
         "metadata": [
           {
@@ -283,8 +565,14 @@
       },
       "FeBoneMergeLink_t": {
         "fields": {
-          "m_nChildNode": 4,
-          "m_nParentHash": 0
+          "m_nChildNode": {
+            "offset": 4,
+            "type": "uint16"
+          },
+          "m_nParentHash": {
+            "offset": 0,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -296,12 +584,30 @@
       },
       "FeBoxRigid_t": {
         "fields": {
-          "nCollisionMask": 34,
-          "nFlags": 50,
-          "nNode": 32,
-          "nVertexMapIndex": 48,
-          "tmFrame2": 0,
-          "vSize": 36
+          "nCollisionMask": {
+            "offset": 34,
+            "type": "uint16"
+          },
+          "nFlags": {
+            "offset": 50,
+            "type": "uint16"
+          },
+          "nNode": {
+            "offset": 32,
+            "type": "uint16"
+          },
+          "nVertexMapIndex": {
+            "offset": 48,
+            "type": "uint16"
+          },
+          "tmFrame2": {
+            "offset": 0,
+            "type": "CTransform"
+          },
+          "vSize": {
+            "offset": 36,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -313,9 +619,18 @@
       },
       "FeBuildBoxRigid_t": {
         "fields": {
-          "m_nAntitunnelGroupBits": 72,
-          "m_nPriority": 64,
-          "m_nVertexMapHash": 68
+          "m_nAntitunnelGroupBits": {
+            "offset": 72,
+            "type": "uint32"
+          },
+          "m_nPriority": {
+            "offset": 64,
+            "type": "int32"
+          },
+          "m_nVertexMapHash": {
+            "offset": 68,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -327,9 +642,18 @@
       },
       "FeBuildSDFRigid_t": {
         "fields": {
-          "m_nAntitunnelGroupBits": 88,
-          "m_nPriority": 80,
-          "m_nVertexMapHash": 84
+          "m_nAntitunnelGroupBits": {
+            "offset": 88,
+            "type": "uint32"
+          },
+          "m_nPriority": {
+            "offset": 80,
+            "type": "int32"
+          },
+          "m_nVertexMapHash": {
+            "offset": 84,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -341,9 +665,18 @@
       },
       "FeBuildSphereRigid_t": {
         "fields": {
-          "m_nAntitunnelGroupBits": 40,
-          "m_nPriority": 32,
-          "m_nVertexMapHash": 36
+          "m_nAntitunnelGroupBits": {
+            "offset": 40,
+            "type": "uint32"
+          },
+          "m_nPriority": {
+            "offset": 32,
+            "type": "int32"
+          },
+          "m_nVertexMapHash": {
+            "offset": 36,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -355,9 +688,18 @@
       },
       "FeBuildTaperedCapsuleRigid_t": {
         "fields": {
-          "m_nAntitunnelGroupBits": 56,
-          "m_nPriority": 48,
-          "m_nVertexMapHash": 52
+          "m_nAntitunnelGroupBits": {
+            "offset": 56,
+            "type": "uint32"
+          },
+          "m_nPriority": {
+            "offset": 48,
+            "type": "int32"
+          },
+          "m_nVertexMapHash": {
+            "offset": 52,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -369,10 +711,22 @@
       },
       "FeCollisionPlane_t": {
         "fields": {
-          "flStrength": 20,
-          "m_Plane": 4,
-          "nChildNode": 2,
-          "nCtrlParent": 0
+          "flStrength": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_Plane": {
+            "offset": 4,
+            "type": "RnPlane_t"
+          },
+          "nChildNode": {
+            "offset": 2,
+            "type": "uint16"
+          },
+          "nCtrlParent": {
+            "offset": 0,
+            "type": "uint16"
+          }
         },
         "metadata": [
           {
@@ -384,9 +738,18 @@
       },
       "FeCtrlOffset_t": {
         "fields": {
-          "nCtrlChild": 14,
-          "nCtrlParent": 12,
-          "vOffset": 0
+          "nCtrlChild": {
+            "offset": 14,
+            "type": "uint16"
+          },
+          "nCtrlParent": {
+            "offset": 12,
+            "type": "uint16"
+          },
+          "vOffset": {
+            "offset": 0,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -398,8 +761,14 @@
       },
       "FeCtrlOsOffset_t": {
         "fields": {
-          "nCtrlChild": 2,
-          "nCtrlParent": 0
+          "nCtrlChild": {
+            "offset": 2,
+            "type": "uint16"
+          },
+          "nCtrlParent": {
+            "offset": 0,
+            "type": "uint16"
+          }
         },
         "metadata": [
           {
@@ -411,10 +780,22 @@
       },
       "FeCtrlSoftOffset_t": {
         "fields": {
-          "flAlpha": 16,
-          "nCtrlChild": 2,
-          "nCtrlParent": 0,
-          "vOffset": 4
+          "flAlpha": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "nCtrlChild": {
+            "offset": 2,
+            "type": "uint16"
+          },
+          "nCtrlParent": {
+            "offset": 0,
+            "type": "uint16"
+          },
+          "vOffset": {
+            "offset": 4,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -426,8 +807,14 @@
       },
       "FeDynKinLink_t": {
         "fields": {
-          "m_nChild": 2,
-          "m_nParent": 0
+          "m_nChild": {
+            "offset": 2,
+            "type": "uint16"
+          },
+          "m_nParent": {
+            "offset": 0,
+            "type": "uint16"
+          }
         },
         "metadata": [
           {
@@ -439,9 +826,18 @@
       },
       "FeEdgeDesc_t": {
         "fields": {
-          "nEdge": 0,
-          "nSide": 4,
-          "nVirtElem": 12
+          "nEdge": {
+            "offset": 0,
+            "type": "uint16[2]"
+          },
+          "nSide": {
+            "offset": 4,
+            "type": "uint16[2][2]"
+          },
+          "nVirtElem": {
+            "offset": 12,
+            "type": "uint16[2]"
+          }
         },
         "metadata": [
           {
@@ -453,10 +849,22 @@
       },
       "FeEffectDesc_t": {
         "fields": {
-          "m_Params": 16,
-          "nNameHash": 8,
-          "nType": 12,
-          "sName": 0
+          "m_Params": {
+            "offset": 16,
+            "type": "KeyValues3"
+          },
+          "nNameHash": {
+            "offset": 8,
+            "type": "uint32"
+          },
+          "nType": {
+            "offset": 12,
+            "type": "int32"
+          },
+          "sName": {
+            "offset": 0,
+            "type": "CUtlString"
+          }
         },
         "metadata": [
           {
@@ -468,9 +876,18 @@
       },
       "FeFitInfluence_t": {
         "fields": {
-          "flWeight": 4,
-          "nMatrixNode": 8,
-          "nVertexNode": 0
+          "flWeight": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "nMatrixNode": {
+            "offset": 8,
+            "type": "uint32"
+          },
+          "nVertexNode": {
+            "offset": 0,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -482,11 +899,26 @@
       },
       "FeFitMatrix_t": {
         "fields": {
-          "bone": 0,
-          "nBeginDynamic": 48,
-          "nEnd": 44,
-          "nNode": 46,
-          "vCenter": 32
+          "bone": {
+            "offset": 0,
+            "type": "CTransform"
+          },
+          "nBeginDynamic": {
+            "offset": 48,
+            "type": "uint16"
+          },
+          "nEnd": {
+            "offset": 44,
+            "type": "uint16"
+          },
+          "nNode": {
+            "offset": 46,
+            "type": "uint16"
+          },
+          "vCenter": {
+            "offset": 32,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -498,9 +930,18 @@
       },
       "FeFitWeight_t": {
         "fields": {
-          "flWeight": 0,
-          "nDummy": 6,
-          "nNode": 4
+          "flWeight": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "nDummy": {
+            "offset": 6,
+            "type": "uint16"
+          },
+          "nNode": {
+            "offset": 4,
+            "type": "uint16"
+          }
         },
         "metadata": [
           {
@@ -512,9 +953,18 @@
       },
       "FeFollowNode_t": {
         "fields": {
-          "flWeight": 4,
-          "nChildNode": 2,
-          "nParentNode": 0
+          "flWeight": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "nChildNode": {
+            "offset": 2,
+            "type": "uint16"
+          },
+          "nParentNode": {
+            "offset": 0,
+            "type": "uint16"
+          }
         },
         "metadata": [
           {
@@ -526,10 +976,22 @@
       },
       "FeHingeLimitBuild_t": {
         "fields": {
-          "flLimitCCW": 20,
-          "flLimitCW": 16,
-          "nFlags": 12,
-          "nNode": 0
+          "flLimitCCW": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "flLimitCW": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "nFlags": {
+            "offset": 12,
+            "type": "uint32"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[6]"
+          }
         },
         "metadata": [
           {
@@ -541,12 +1003,30 @@
       },
       "FeHingeLimit_t": {
         "fields": {
-          "flAngleCenter": 24,
-          "flAngleExtents": 28,
-          "flWeight4": 16,
-          "flWeight5": 20,
-          "nFlags": 12,
-          "nNode": 0
+          "flAngleCenter": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "flAngleExtents": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "flWeight4": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "flWeight5": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "nFlags": {
+            "offset": 12,
+            "type": "uint32"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[6]"
+          }
         },
         "metadata": [
           {
@@ -558,10 +1038,22 @@
       },
       "FeKelagerBend2_t": {
         "fields": {
-          "flHeight0": 12,
-          "flWeight": 0,
-          "nNode": 16,
-          "nReserved": 22
+          "flHeight0": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "flWeight": {
+            "offset": 0,
+            "type": "float32[3]"
+          },
+          "nNode": {
+            "offset": 16,
+            "type": "uint16[3]"
+          },
+          "nReserved": {
+            "offset": 22,
+            "type": "uint16"
+          }
         },
         "metadata": [
           {
@@ -573,11 +1065,26 @@
       },
       "FeModelSelfCollisionLayer_t": {
         "fields": {
-          "m_Name": 0,
-          "m_Nodes": 8,
-          "m_flParentReaction": 32,
-          "m_nEndIdx": 40,
-          "m_nFlags": 36
+          "m_Name": {
+            "offset": 0,
+            "type": "CUtlString"
+          },
+          "m_Nodes": {
+            "offset": 8,
+            "type": "CUtlVector<uint16>"
+          },
+          "m_flParentReaction": {
+            "offset": 32,
+            "type": "float32"
+          },
+          "m_nEndIdx": {
+            "offset": 40,
+            "type": "uint32[4]"
+          },
+          "m_nFlags": {
+            "offset": 36,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -589,14 +1096,38 @@
       },
       "FeMorphLayerDepr_t": {
         "fields": {
-          "m_GoalDamping": 112,
-          "m_GoalStrength": 88,
-          "m_Gravity": 64,
-          "m_InitPos": 40,
-          "m_Name": 0,
-          "m_Nodes": 16,
-          "m_nFlags": 136,
-          "m_nNameHash": 8
+          "m_GoalDamping": {
+            "offset": 112,
+            "type": "CUtlVector<float32>"
+          },
+          "m_GoalStrength": {
+            "offset": 88,
+            "type": "CUtlVector<float32>"
+          },
+          "m_Gravity": {
+            "offset": 64,
+            "type": "CUtlVector<float32>"
+          },
+          "m_InitPos": {
+            "offset": 40,
+            "type": "CUtlVector<Vector>"
+          },
+          "m_Name": {
+            "offset": 0,
+            "type": "CUtlString"
+          },
+          "m_Nodes": {
+            "offset": 16,
+            "type": "CUtlVector<uint16>"
+          },
+          "m_nFlags": {
+            "offset": 136,
+            "type": "uint32"
+          },
+          "m_nNameHash": {
+            "offset": 8,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -608,13 +1139,34 @@
       },
       "FeNodeBase_t": {
         "fields": {
-          "nDummy": 2,
-          "nNode": 0,
-          "nNodeX0": 8,
-          "nNodeX1": 10,
-          "nNodeY0": 12,
-          "nNodeY1": 14,
-          "qAdjust": 16
+          "nDummy": {
+            "offset": 2,
+            "type": "uint16[3]"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16"
+          },
+          "nNodeX0": {
+            "offset": 8,
+            "type": "uint16"
+          },
+          "nNodeX1": {
+            "offset": 10,
+            "type": "uint16"
+          },
+          "nNodeY0": {
+            "offset": 12,
+            "type": "uint16"
+          },
+          "nNodeY1": {
+            "offset": 14,
+            "type": "uint16"
+          },
+          "qAdjust": {
+            "offset": 16,
+            "type": "QuaternionStorage"
+          }
         },
         "metadata": [
           {
@@ -626,10 +1178,22 @@
       },
       "FeNodeIntegrator_t": {
         "fields": {
-          "flAnimationForceAttraction": 4,
-          "flAnimationVertexAttraction": 8,
-          "flGravity": 12,
-          "flPointDamping": 0
+          "flAnimationForceAttraction": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "flAnimationVertexAttraction": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "flGravity": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "flPointDamping": {
+            "offset": 0,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -641,9 +1205,18 @@
       },
       "FeNodeReverseOffset_t": {
         "fields": {
-          "nBoneCtrl": 12,
-          "nTargetNode": 14,
-          "vOffset": 0
+          "nBoneCtrl": {
+            "offset": 12,
+            "type": "uint16"
+          },
+          "nTargetNode": {
+            "offset": 14,
+            "type": "uint16"
+          },
+          "vOffset": {
+            "offset": 0,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -655,10 +1228,22 @@
       },
       "FeNodeStrayBox_t": {
         "fields": {
-          "nFlags": 12,
-          "nNode": 28,
-          "vMax": 16,
-          "vMin": 0
+          "nFlags": {
+            "offset": 12,
+            "type": "uint32"
+          },
+          "nNode": {
+            "offset": 28,
+            "type": "uint16[2]"
+          },
+          "vMax": {
+            "offset": 16,
+            "type": "Vector"
+          },
+          "vMin": {
+            "offset": 0,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -670,10 +1255,22 @@
       },
       "FeNodeWindBase_t": {
         "fields": {
-          "nNodeX0": 0,
-          "nNodeX1": 2,
-          "nNodeY0": 4,
-          "nNodeY1": 6
+          "nNodeX0": {
+            "offset": 0,
+            "type": "uint16"
+          },
+          "nNodeX1": {
+            "offset": 2,
+            "type": "uint16"
+          },
+          "nNodeY0": {
+            "offset": 4,
+            "type": "uint16"
+          },
+          "nNodeY1": {
+            "offset": 6,
+            "type": "uint16"
+          }
         },
         "metadata": [
           {
@@ -685,8 +1282,14 @@
       },
       "FeProxyVertexMap_t": {
         "fields": {
-          "m_Name": 0,
-          "m_flWeight": 8
+          "m_Name": {
+            "offset": 0,
+            "type": "CUtlString"
+          },
+          "m_flWeight": {
+            "offset": 8,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -698,9 +1301,18 @@
       },
       "FeQuad_t": {
         "fields": {
-          "flSlack": 8,
-          "nNode": 0,
-          "vShape": 12
+          "flSlack": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[4]"
+          },
+          "vShape": {
+            "offset": 12,
+            "type": "Vector4D[4]"
+          }
         },
         "metadata": [
           {
@@ -712,11 +1324,26 @@
       },
       "FeRigidColliderIndices_t": {
         "fields": {
-          "m_nBoxRigidIndex": 4,
-          "m_nCollisionPlaneIndex": 8,
-          "m_nSDFRigidIndex": 6,
-          "m_nSphereRigidIndex": 2,
-          "m_nTaperedCapsuleRigidIndex": 0
+          "m_nBoxRigidIndex": {
+            "offset": 4,
+            "type": "uint16"
+          },
+          "m_nCollisionPlaneIndex": {
+            "offset": 8,
+            "type": "uint16"
+          },
+          "m_nSDFRigidIndex": {
+            "offset": 6,
+            "type": "uint16"
+          },
+          "m_nSphereRigidIndex": {
+            "offset": 2,
+            "type": "uint16"
+          },
+          "m_nTaperedCapsuleRigidIndex": {
+            "offset": 0,
+            "type": "uint16"
+          }
         },
         "metadata": [
           {
@@ -728,11 +1355,26 @@
       },
       "FeRodConstraint_t": {
         "fields": {
-          "flMaxDist": 4,
-          "flMinDist": 8,
-          "flRelaxationFactor": 16,
-          "flWeight0": 12,
-          "nNode": 0
+          "flMaxDist": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "flMinDist": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "flRelaxationFactor": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "flWeight0": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[2]"
+          }
         },
         "metadata": [
           {
@@ -744,17 +1386,50 @@
       },
       "FeSDFRigid_t": {
         "fields": {
-          "flBounciness": 24,
-          "m_Distances": 40,
-          "m_nDepth": 72,
-          "m_nHeight": 68,
-          "m_nWidth": 64,
-          "nCollisionMask": 30,
-          "nFlags": 34,
-          "nNode": 28,
-          "nVertexMapIndex": 32,
-          "vLocalMax": 12,
-          "vLocalMin": 0
+          "flBounciness": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_Distances": {
+            "offset": 40,
+            "type": "CUtlVector<float32>"
+          },
+          "m_nDepth": {
+            "offset": 72,
+            "type": "int32"
+          },
+          "m_nHeight": {
+            "offset": 68,
+            "type": "int32"
+          },
+          "m_nWidth": {
+            "offset": 64,
+            "type": "int32"
+          },
+          "nCollisionMask": {
+            "offset": 30,
+            "type": "uint16"
+          },
+          "nFlags": {
+            "offset": 34,
+            "type": "uint16"
+          },
+          "nNode": {
+            "offset": 28,
+            "type": "uint16"
+          },
+          "nVertexMapIndex": {
+            "offset": 32,
+            "type": "uint16"
+          },
+          "vLocalMax": {
+            "offset": 12,
+            "type": "Vector"
+          },
+          "vLocalMin": {
+            "offset": 0,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -766,9 +1441,18 @@
       },
       "FeSimdAnimStrayRadius_t": {
         "fields": {
-          "flMaxDist": 16,
-          "flRelaxationFactor": 32,
-          "nNode": 0
+          "flMaxDist": {
+            "offset": 16,
+            "type": "fltx4"
+          },
+          "flRelaxationFactor": {
+            "offset": 32,
+            "type": "fltx4"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[4][2]"
+          }
         },
         "metadata": [
           {
@@ -780,13 +1464,34 @@
       },
       "FeSimdNodeBase_t": {
         "fields": {
-          "nDummy": 40,
-          "nNode": 0,
-          "nNodeX0": 8,
-          "nNodeX1": 16,
-          "nNodeY0": 24,
-          "nNodeY1": 32,
-          "qAdjust": 48
+          "nDummy": {
+            "offset": 40,
+            "type": "uint16[4]"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[4]"
+          },
+          "nNodeX0": {
+            "offset": 8,
+            "type": "uint16[4]"
+          },
+          "nNodeX1": {
+            "offset": 16,
+            "type": "uint16[4]"
+          },
+          "nNodeY0": {
+            "offset": 24,
+            "type": "uint16[4]"
+          },
+          "nNodeY1": {
+            "offset": 32,
+            "type": "uint16[4]"
+          },
+          "qAdjust": {
+            "offset": 48,
+            "type": "FourQuaternions"
+          }
         },
         "metadata": [
           {
@@ -798,10 +1503,22 @@
       },
       "FeSimdQuad_t": {
         "fields": {
-          "f4Slack": 32,
-          "f4Weights": 240,
-          "nNode": 0,
-          "vShape": 48
+          "f4Slack": {
+            "offset": 32,
+            "type": "fltx4"
+          },
+          "f4Weights": {
+            "offset": 240,
+            "type": "fltx4[4]"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[4][4]"
+          },
+          "vShape": {
+            "offset": 48,
+            "type": "FourVectors[4]"
+          }
         },
         "metadata": [
           {
@@ -813,9 +1530,18 @@
       },
       "FeSimdRodConstraintAnim_t": {
         "fields": {
-          "f4RelaxationFactor": 32,
-          "f4Weight0": 16,
-          "nNode": 0
+          "f4RelaxationFactor": {
+            "offset": 32,
+            "type": "fltx4"
+          },
+          "f4Weight0": {
+            "offset": 16,
+            "type": "fltx4"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[4][2]"
+          }
         },
         "metadata": [
           {
@@ -827,11 +1553,26 @@
       },
       "FeSimdRodConstraint_t": {
         "fields": {
-          "f4MaxDist": 16,
-          "f4MinDist": 32,
-          "f4RelaxationFactor": 64,
-          "f4Weight0": 48,
-          "nNode": 0
+          "f4MaxDist": {
+            "offset": 16,
+            "type": "fltx4"
+          },
+          "f4MinDist": {
+            "offset": 32,
+            "type": "fltx4"
+          },
+          "f4RelaxationFactor": {
+            "offset": 64,
+            "type": "fltx4"
+          },
+          "f4Weight0": {
+            "offset": 48,
+            "type": "fltx4"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[4][2]"
+          }
         },
         "metadata": [
           {
@@ -843,11 +1584,26 @@
       },
       "FeSimdSpringIntegrator_t": {
         "fields": {
-          "flNodeWeight0": 64,
-          "flSpringConstant": 32,
-          "flSpringDamping": 48,
-          "flSpringRestLength": 16,
-          "nNode": 0
+          "flNodeWeight0": {
+            "offset": 64,
+            "type": "fltx4"
+          },
+          "flSpringConstant": {
+            "offset": 32,
+            "type": "fltx4"
+          },
+          "flSpringDamping": {
+            "offset": 48,
+            "type": "fltx4"
+          },
+          "flSpringRestLength": {
+            "offset": 16,
+            "type": "fltx4"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[4][2]"
+          }
         },
         "metadata": [
           {
@@ -859,11 +1615,26 @@
       },
       "FeSimdTri_t": {
         "fields": {
-          "nNode": 0,
-          "v1x": 80,
-          "v2": 96,
-          "w1": 48,
-          "w2": 64
+          "nNode": {
+            "offset": 0,
+            "type": "uint32[4][3]"
+          },
+          "v1x": {
+            "offset": 80,
+            "type": "fltx4"
+          },
+          "v2": {
+            "offset": 96,
+            "type": "FourVectors2D"
+          },
+          "w1": {
+            "offset": 48,
+            "type": "fltx4"
+          },
+          "w2": {
+            "offset": 64,
+            "type": "fltx4"
+          }
         },
         "metadata": [
           {
@@ -875,8 +1646,14 @@
       },
       "FeSoftParent_t": {
         "fields": {
-          "flAlpha": 4,
-          "nParent": 0
+          "flAlpha": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "nParent": {
+            "offset": 0,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -888,7 +1665,10 @@
       },
       "FeSourceEdge_t": {
         "fields": {
-          "nNode": 0
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[2]"
+          }
         },
         "metadata": [
           {
@@ -900,11 +1680,26 @@
       },
       "FeSphereRigid_t": {
         "fields": {
-          "nCollisionMask": 18,
-          "nFlags": 22,
-          "nNode": 16,
-          "nVertexMapIndex": 20,
-          "vSphere": 0
+          "nCollisionMask": {
+            "offset": 18,
+            "type": "uint16"
+          },
+          "nFlags": {
+            "offset": 22,
+            "type": "uint16"
+          },
+          "nNode": {
+            "offset": 16,
+            "type": "uint16"
+          },
+          "nVertexMapIndex": {
+            "offset": 20,
+            "type": "uint16"
+          },
+          "vSphere": {
+            "offset": 0,
+            "type": "fltx4"
+          }
         },
         "metadata": [
           {
@@ -916,11 +1711,26 @@
       },
       "FeSpringIntegrator_t": {
         "fields": {
-          "flNodeWeight0": 16,
-          "flSpringConstant": 8,
-          "flSpringDamping": 12,
-          "flSpringRestLength": 4,
-          "nNode": 0
+          "flNodeWeight0": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "flSpringConstant": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "flSpringDamping": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "flSpringRestLength": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[2]"
+          }
         },
         "metadata": [
           {
@@ -932,10 +1742,22 @@
       },
       "FeStiffHingeBuild_t": {
         "fields": {
-          "flMaxAngle": 0,
-          "flMotionBias": 8,
-          "flStrength": 4,
-          "nNode": 20
+          "flMaxAngle": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "flMotionBias": {
+            "offset": 8,
+            "type": "float32[3]"
+          },
+          "flStrength": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "nNode": {
+            "offset": 20,
+            "type": "uint16[3]"
+          }
         },
         "metadata": [
           {
@@ -947,11 +1769,26 @@
       },
       "FeTaperedCapsuleRigid_t": {
         "fields": {
-          "nCollisionMask": 34,
-          "nFlags": 38,
-          "nNode": 32,
-          "nVertexMapIndex": 36,
-          "vSphere": 0
+          "nCollisionMask": {
+            "offset": 34,
+            "type": "uint16"
+          },
+          "nFlags": {
+            "offset": 38,
+            "type": "uint16"
+          },
+          "nNode": {
+            "offset": 32,
+            "type": "uint16"
+          },
+          "nVertexMapIndex": {
+            "offset": 36,
+            "type": "uint16"
+          },
+          "vSphere": {
+            "offset": 0,
+            "type": "fltx4[2]"
+          }
         },
         "metadata": [
           {
@@ -963,10 +1800,22 @@
       },
       "FeTaperedCapsuleStretch_t": {
         "fields": {
-          "flRadius": 8,
-          "nCollisionMask": 4,
-          "nDummy": 6,
-          "nNode": 0
+          "flRadius": {
+            "offset": 8,
+            "type": "float32[2]"
+          },
+          "nCollisionMask": {
+            "offset": 4,
+            "type": "uint16"
+          },
+          "nDummy": {
+            "offset": 6,
+            "type": "uint16"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[2]"
+          }
         },
         "metadata": [
           {
@@ -978,7 +1827,10 @@
       },
       "FeTreeChildren_t": {
         "fields": {
-          "nChild": 0
+          "nChild": {
+            "offset": 0,
+            "type": "uint16[2]"
+          }
         },
         "metadata": [
           {
@@ -990,11 +1842,26 @@
       },
       "FeTri_t": {
         "fields": {
-          "nNode": 0,
-          "v1x": 16,
-          "v2": 20,
-          "w1": 8,
-          "w2": 12
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[3]"
+          },
+          "v1x": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "v2": {
+            "offset": 20,
+            "type": "Vector2D"
+          },
+          "w1": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "w2": {
+            "offset": 12,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1006,10 +1873,22 @@
       },
       "FeTwistConstraint_t": {
         "fields": {
-          "flSwingRelax": 8,
-          "flTwistRelax": 4,
-          "nNodeEnd": 2,
-          "nNodeOrient": 0
+          "flSwingRelax": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "flTwistRelax": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "nNodeEnd": {
+            "offset": 2,
+            "type": "uint16"
+          },
+          "nNodeOrient": {
+            "offset": 0,
+            "type": "uint16"
+          }
         },
         "metadata": [
           {
@@ -1021,12 +1900,30 @@
       },
       "FeVertexMapBuild_t": {
         "fields": {
-          "m_Color": 12,
-          "m_VertexMapName": 0,
-          "m_Weights": 24,
-          "m_flVolumetricSolveStrength": 16,
-          "m_nNameHash": 8,
-          "m_nScaleSourceNode": 20
+          "m_Color": {
+            "offset": 12,
+            "type": "Color"
+          },
+          "m_VertexMapName": {
+            "offset": 0,
+            "type": "CUtlString"
+          },
+          "m_Weights": {
+            "offset": 24,
+            "type": "CUtlVector<float32>"
+          },
+          "m_flVolumetricSolveStrength": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_nNameHash": {
+            "offset": 8,
+            "type": "uint32"
+          },
+          "m_nScaleSourceNode": {
+            "offset": 20,
+            "type": "int32"
+          }
         },
         "metadata": [
           {
@@ -1038,18 +1935,54 @@
       },
       "FeVertexMapDesc_t": {
         "fields": {
-          "flVolumetricSolveStrength": 44,
-          "nColor": 12,
-          "nFlags": 16,
-          "nMapOffset": 24,
-          "nNameHash": 8,
-          "nNodeListCount": 50,
-          "nNodeListOffset": 28,
-          "nScaleSourceNode": 48,
-          "nVertexBase": 20,
-          "nVertexCount": 22,
-          "sName": 0,
-          "vCenterOfMass": 32
+          "flVolumetricSolveStrength": {
+            "offset": 44,
+            "type": "float32"
+          },
+          "nColor": {
+            "offset": 12,
+            "type": "uint32"
+          },
+          "nFlags": {
+            "offset": 16,
+            "type": "uint32"
+          },
+          "nMapOffset": {
+            "offset": 24,
+            "type": "uint32"
+          },
+          "nNameHash": {
+            "offset": 8,
+            "type": "uint32"
+          },
+          "nNodeListCount": {
+            "offset": 50,
+            "type": "uint16"
+          },
+          "nNodeListOffset": {
+            "offset": 28,
+            "type": "uint32"
+          },
+          "nScaleSourceNode": {
+            "offset": 48,
+            "type": "int16"
+          },
+          "nVertexBase": {
+            "offset": 20,
+            "type": "uint16"
+          },
+          "nVertexCount": {
+            "offset": 22,
+            "type": "uint16"
+          },
+          "sName": {
+            "offset": 0,
+            "type": "CUtlString"
+          },
+          "vCenterOfMass": {
+            "offset": 32,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -1061,8 +1994,14 @@
       },
       "FeWeightedNode_t": {
         "fields": {
-          "nNode": 0,
-          "nWeight": 2
+          "nNode": {
+            "offset": 0,
+            "type": "uint16"
+          },
+          "nWeight": {
+            "offset": 2,
+            "type": "uint16"
+          }
         },
         "metadata": [
           {
@@ -1074,10 +2013,22 @@
       },
       "FeWorldCollisionParams_t": {
         "fields": {
-          "flGroundFriction": 4,
-          "flWorldFriction": 0,
-          "nListBegin": 8,
-          "nListEnd": 10
+          "flGroundFriction": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "flWorldFriction": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "nListBegin": {
+            "offset": 8,
+            "type": "uint16"
+          },
+          "nListEnd": {
+            "offset": 10,
+            "type": "uint16"
+          }
         },
         "metadata": [
           {
@@ -1089,10 +2040,22 @@
       },
       "FourCovMatrices3": {
         "fields": {
-          "m_flXY": 48,
-          "m_flXZ": 64,
-          "m_flYZ": 80,
-          "m_vDiag": 0
+          "m_flXY": {
+            "offset": 48,
+            "type": "fltx4"
+          },
+          "m_flXZ": {
+            "offset": 64,
+            "type": "fltx4"
+          },
+          "m_flYZ": {
+            "offset": 80,
+            "type": "fltx4"
+          },
+          "m_vDiag": {
+            "offset": 0,
+            "type": "FourVectors"
+          }
         },
         "metadata": [
           {
@@ -1104,8 +2067,14 @@
       },
       "FourVectors2D": {
         "fields": {
-          "x": 0,
-          "y": 16
+          "x": {
+            "offset": 0,
+            "type": "fltx4"
+          },
+          "y": {
+            "offset": 16,
+            "type": "fltx4"
+          }
         },
         "metadata": [
           {
@@ -1117,8 +2086,14 @@
       },
       "IPhysAggregateInstance": {
         "fields": {
-          "m_bIsAxisAligned": 16,
-          "m_pSkeleton": 8
+          "m_bIsAxisAligned": {
+            "offset": 16,
+            "type": "bool"
+          },
+          "m_pSkeleton": {
+            "offset": 8,
+            "type": "void*"
+          }
         },
         "metadata": [],
         "parent": null
@@ -1160,18 +2135,54 @@
       },
       "OldFeEdge_t": {
         "fields": {
-          "c01": 28,
-          "c02": 32,
-          "c03": 36,
-          "c04": 40,
-          "flAxialModelDist": 44,
-          "flAxialModelWeights": 48,
-          "flThetaFactor": 24,
-          "flThetaRelaxed": 20,
-          "invA": 12,
-          "m_flK": 0,
-          "m_nNode": 64,
-          "t": 16
+          "c01": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "c02": {
+            "offset": 32,
+            "type": "float32"
+          },
+          "c03": {
+            "offset": 36,
+            "type": "float32"
+          },
+          "c04": {
+            "offset": 40,
+            "type": "float32"
+          },
+          "flAxialModelDist": {
+            "offset": 44,
+            "type": "float32"
+          },
+          "flAxialModelWeights": {
+            "offset": 48,
+            "type": "float32[4]"
+          },
+          "flThetaFactor": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "flThetaRelaxed": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "invA": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_flK": {
+            "offset": 0,
+            "type": "float32[3]"
+          },
+          "m_nNode": {
+            "offset": 64,
+            "type": "uint16[4]"
+          },
+          "t": {
+            "offset": 16,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1183,117 +2194,450 @@
       },
       "PhysFeModelDesc_t": {
         "fields": {
-          "m_AnimStrayRadii": 1152,
-          "m_AntiTunnelBytecode": 384,
-          "m_AntiTunnelProbes": 456,
-          "m_AntiTunnelTargetNodes": 480,
-          "m_AxialEdges": 528,
-          "m_BoneMergeLinks": 432,
-          "m_BoxRigids": 1376,
-          "m_CollisionPlanes": 648,
-          "m_CtrlHash": 0,
-          "m_CtrlName": 24,
-          "m_CtrlOffsets": 576,
-          "m_CtrlOsOffsets": 600,
-          "m_CtrlSoftOffsets": 1224,
-          "m_DynKinLinks": 408,
-          "m_DynNodeFriction": 816,
-          "m_DynNodeVertexSet": 1400,
-          "m_DynNodeWindBases": 1664,
-          "m_Effects": 1568,
-          "m_FitMatrices": 1080,
-          "m_FitWeights": 1104,
-          "m_FollowNodes": 624,
-          "m_FreeNodes": 1056,
-          "m_GoalDampedSpringIntegrators": 1296,
-          "m_HingeLimits": 360,
-          "m_InitPose": 288,
-          "m_JiggleBones": 1248,
-          "m_KelagerBends": 1200,
-          "m_LegacyStretchForce": 768,
-          "m_LocalForce": 864,
-          "m_LocalRotation": 840,
-          "m_LockToGoal": 1616,
-          "m_LockToParent": 1592,
-          "m_MorphLayers": 1472,
-          "m_MorphSetData": 1496,
-          "m_NodeBases": 120,
-          "m_NodeCollisionRadii": 792,
-          "m_NodeIntegrator": 672,
-          "m_NodeInvMasses": 552,
-          "m_NodeStrayBoxes": 504,
-          "m_Quads": 168,
-          "m_ReverseOffsets": 1128,
-          "m_RigidColliderPriorities": 1448,
-          "m_Rods": 312,
-          "m_Ropes": 96,
-          "m_SDFRigids": 1352,
-          "m_SelfCollisionLayers": 1688,
-          "m_SimdAnimStrayRadii": 1176,
-          "m_SimdNodeBases": 144,
-          "m_SimdQuads": 192,
-          "m_SimdRods": 240,
-          "m_SimdRodsAnim": 264,
-          "m_SimdSpringIntegrator": 720,
-          "m_SimdTris": 216,
-          "m_SkelParents": 1640,
-          "m_SourceElems": 1272,
-          "m_SphereRigids": 936,
-          "m_SpringIntegrator": 696,
-          "m_TaperedCapsuleRigids": 912,
-          "m_TaperedCapsuleStretches": 888,
-          "m_TreeChildren": 1032,
-          "m_TreeCollisionMasks": 1008,
-          "m_TreeParents": 984,
-          "m_Tris": 1320,
-          "m_Twists": 336,
-          "m_VertexMapValues": 1544,
-          "m_VertexMaps": 1520,
-          "m_VertexSetNames": 1424,
-          "m_WorldCollisionNodes": 960,
-          "m_WorldCollisionParams": 744,
-          "m_flAddWorldCollisionRadius": 1764,
-          "m_flDefaultExpAirDrag": 1744,
-          "m_flDefaultExpQuadAirDrag": 1752,
-          "m_flDefaultGravityScale": 1736,
-          "m_flDefaultSurfaceStretch": 1728,
-          "m_flDefaultThreadStretch": 1732,
-          "m_flDefaultTimeDilation": 1716,
-          "m_flDefaultVelAirDrag": 1740,
-          "m_flDefaultVelQuadAirDrag": 1748,
-          "m_flDefaultVolumetricSolveAmount": 1768,
-          "m_flInternalPressure": 1712,
-          "m_flLocalDrag1": 1776,
-          "m_flLocalForce": 56,
-          "m_flLocalRotation": 60,
-          "m_flMotionSmoothCDT": 1772,
-          "m_flQuadVelocitySmoothRate": 1760,
-          "m_flRodVelocitySmoothRate": 1756,
-          "m_flWindDrag": 1724,
-          "m_flWindage": 1720,
-          "m_nDynamicNodeFlags": 52,
-          "m_nExtraGoalIterations": 1350,
-          "m_nExtraIterations": 1351,
-          "m_nExtraPressureIterations": 1349,
-          "m_nFirstPositionDrivenNode": 70,
-          "m_nNodeBaseJiggleboneDependsCount": 86,
-          "m_nNodeCount": 64,
-          "m_nQuadCount1": 80,
-          "m_nQuadCount2": 82,
-          "m_nQuadVelocitySmoothIterations": 1782,
-          "m_nReservedUint8": 1348,
-          "m_nRodVelocitySmoothIterations": 1780,
-          "m_nRopeCount": 88,
-          "m_nRotLockStaticNodes": 68,
-          "m_nSimdQuadCount1": 76,
-          "m_nSimdQuadCount2": 78,
-          "m_nSimdTriCount1": 72,
-          "m_nSimdTriCount2": 74,
-          "m_nStaticNodeFlags": 48,
-          "m_nStaticNodes": 66,
-          "m_nTreeDepth": 84,
-          "m_nTriCount1": 1344,
-          "m_nTriCount2": 1346
+          "m_AnimStrayRadii": {
+            "offset": 1152,
+            "type": "CUtlVector<FeAnimStrayRadius_t>"
+          },
+          "m_AntiTunnelBytecode": {
+            "offset": 384,
+            "type": "CUtlVector<uint32>"
+          },
+          "m_AntiTunnelProbes": {
+            "offset": 456,
+            "type": "CUtlVector<FeAntiTunnelProbe_t>"
+          },
+          "m_AntiTunnelTargetNodes": {
+            "offset": 480,
+            "type": "CUtlVector<uint16>"
+          },
+          "m_AxialEdges": {
+            "offset": 528,
+            "type": "CUtlVector<FeAxialEdgeBend_t>"
+          },
+          "m_BoneMergeLinks": {
+            "offset": 432,
+            "type": "CUtlVector<FeBoneMergeLink_t>"
+          },
+          "m_BoxRigids": {
+            "offset": 1376,
+            "type": "CUtlVector<FeBoxRigid_t>"
+          },
+          "m_CollisionPlanes": {
+            "offset": 648,
+            "type": "CUtlVector<FeCollisionPlane_t>"
+          },
+          "m_CtrlHash": {
+            "offset": 0,
+            "type": "CUtlVector<uint32>"
+          },
+          "m_CtrlName": {
+            "offset": 24,
+            "type": "CUtlVector<CUtlString>"
+          },
+          "m_CtrlOffsets": {
+            "offset": 576,
+            "type": "CUtlVector<FeCtrlOffset_t>"
+          },
+          "m_CtrlOsOffsets": {
+            "offset": 600,
+            "type": "CUtlVector<FeCtrlOsOffset_t>"
+          },
+          "m_CtrlSoftOffsets": {
+            "offset": 1224,
+            "type": "CUtlVector<FeCtrlSoftOffset_t>"
+          },
+          "m_DynKinLinks": {
+            "offset": 408,
+            "type": "CUtlVector<FeDynKinLink_t>"
+          },
+          "m_DynNodeFriction": {
+            "offset": 816,
+            "type": "CUtlVector<float32>"
+          },
+          "m_DynNodeVertexSet": {
+            "offset": 1400,
+            "type": "CUtlVector<uint8>"
+          },
+          "m_DynNodeWindBases": {
+            "offset": 1664,
+            "type": "CUtlVector<FeNodeWindBase_t>"
+          },
+          "m_Effects": {
+            "offset": 1568,
+            "type": "CUtlVector<FeEffectDesc_t>"
+          },
+          "m_FitMatrices": {
+            "offset": 1080,
+            "type": "CUtlVector<FeFitMatrix_t>"
+          },
+          "m_FitWeights": {
+            "offset": 1104,
+            "type": "CUtlVector<FeFitWeight_t>"
+          },
+          "m_FollowNodes": {
+            "offset": 624,
+            "type": "CUtlVector<FeFollowNode_t>"
+          },
+          "m_FreeNodes": {
+            "offset": 1056,
+            "type": "CUtlVector<uint16>"
+          },
+          "m_GoalDampedSpringIntegrators": {
+            "offset": 1296,
+            "type": "CUtlVector<uint32>"
+          },
+          "m_HingeLimits": {
+            "offset": 360,
+            "type": "CUtlVector<FeHingeLimit_t>"
+          },
+          "m_InitPose": {
+            "offset": 288,
+            "type": "CUtlVector<CTransform>"
+          },
+          "m_JiggleBones": {
+            "offset": 1248,
+            "type": "CUtlVector<CFeIndexedJiggleBone>"
+          },
+          "m_KelagerBends": {
+            "offset": 1200,
+            "type": "CUtlVector<FeKelagerBend2_t>"
+          },
+          "m_LegacyStretchForce": {
+            "offset": 768,
+            "type": "CUtlVector<float32>"
+          },
+          "m_LocalForce": {
+            "offset": 864,
+            "type": "CUtlVector<float32>"
+          },
+          "m_LocalRotation": {
+            "offset": 840,
+            "type": "CUtlVector<float32>"
+          },
+          "m_LockToGoal": {
+            "offset": 1616,
+            "type": "CUtlVector<uint16>"
+          },
+          "m_LockToParent": {
+            "offset": 1592,
+            "type": "CUtlVector<FeCtrlOffset_t>"
+          },
+          "m_MorphLayers": {
+            "offset": 1472,
+            "type": "CUtlVector<FeMorphLayerDepr_t>"
+          },
+          "m_MorphSetData": {
+            "offset": 1496,
+            "type": "CUtlVector<uint8>"
+          },
+          "m_NodeBases": {
+            "offset": 120,
+            "type": "CUtlVector<FeNodeBase_t>"
+          },
+          "m_NodeCollisionRadii": {
+            "offset": 792,
+            "type": "CUtlVector<float32>"
+          },
+          "m_NodeIntegrator": {
+            "offset": 672,
+            "type": "CUtlVector<FeNodeIntegrator_t>"
+          },
+          "m_NodeInvMasses": {
+            "offset": 552,
+            "type": "CUtlVector<float32>"
+          },
+          "m_NodeStrayBoxes": {
+            "offset": 504,
+            "type": "CUtlVector<FeNodeStrayBox_t>"
+          },
+          "m_Quads": {
+            "offset": 168,
+            "type": "CUtlVector<FeQuad_t>"
+          },
+          "m_ReverseOffsets": {
+            "offset": 1128,
+            "type": "CUtlVector<FeNodeReverseOffset_t>"
+          },
+          "m_RigidColliderPriorities": {
+            "offset": 1448,
+            "type": "CUtlVector<FeRigidColliderIndices_t>"
+          },
+          "m_Rods": {
+            "offset": 312,
+            "type": "CUtlVector<FeRodConstraint_t>"
+          },
+          "m_Ropes": {
+            "offset": 96,
+            "type": "CUtlVector<uint16>"
+          },
+          "m_SDFRigids": {
+            "offset": 1352,
+            "type": "CUtlVector<FeSDFRigid_t>"
+          },
+          "m_SelfCollisionLayers": {
+            "offset": 1688,
+            "type": "CUtlVector<FeModelSelfCollisionLayer_t>"
+          },
+          "m_SimdAnimStrayRadii": {
+            "offset": 1176,
+            "type": "CUtlVector<FeSimdAnimStrayRadius_t>"
+          },
+          "m_SimdNodeBases": {
+            "offset": 144,
+            "type": "CUtlVector<FeSimdNodeBase_t>"
+          },
+          "m_SimdQuads": {
+            "offset": 192,
+            "type": "CUtlVector<FeSimdQuad_t>"
+          },
+          "m_SimdRods": {
+            "offset": 240,
+            "type": "CUtlVector<FeSimdRodConstraint_t>"
+          },
+          "m_SimdRodsAnim": {
+            "offset": 264,
+            "type": "CUtlVector<FeSimdRodConstraintAnim_t>"
+          },
+          "m_SimdSpringIntegrator": {
+            "offset": 720,
+            "type": "CUtlVector<FeSimdSpringIntegrator_t>"
+          },
+          "m_SimdTris": {
+            "offset": 216,
+            "type": "CUtlVector<FeSimdTri_t>"
+          },
+          "m_SkelParents": {
+            "offset": 1640,
+            "type": "CUtlVector<int16>"
+          },
+          "m_SourceElems": {
+            "offset": 1272,
+            "type": "CUtlVector<uint16>"
+          },
+          "m_SphereRigids": {
+            "offset": 936,
+            "type": "CUtlVector<FeSphereRigid_t>"
+          },
+          "m_SpringIntegrator": {
+            "offset": 696,
+            "type": "CUtlVector<FeSpringIntegrator_t>"
+          },
+          "m_TaperedCapsuleRigids": {
+            "offset": 912,
+            "type": "CUtlVector<FeTaperedCapsuleRigid_t>"
+          },
+          "m_TaperedCapsuleStretches": {
+            "offset": 888,
+            "type": "CUtlVector<FeTaperedCapsuleStretch_t>"
+          },
+          "m_TreeChildren": {
+            "offset": 1032,
+            "type": "CUtlVector<FeTreeChildren_t>"
+          },
+          "m_TreeCollisionMasks": {
+            "offset": 1008,
+            "type": "CUtlVector<uint16>"
+          },
+          "m_TreeParents": {
+            "offset": 984,
+            "type": "CUtlVector<uint16>"
+          },
+          "m_Tris": {
+            "offset": 1320,
+            "type": "CUtlVector<FeTri_t>"
+          },
+          "m_Twists": {
+            "offset": 336,
+            "type": "CUtlVector<FeTwistConstraint_t>"
+          },
+          "m_VertexMapValues": {
+            "offset": 1544,
+            "type": "CUtlVector<uint8>"
+          },
+          "m_VertexMaps": {
+            "offset": 1520,
+            "type": "CUtlVector<FeVertexMapDesc_t>"
+          },
+          "m_VertexSetNames": {
+            "offset": 1424,
+            "type": "CUtlVector<uint32>"
+          },
+          "m_WorldCollisionNodes": {
+            "offset": 960,
+            "type": "CUtlVector<uint16>"
+          },
+          "m_WorldCollisionParams": {
+            "offset": 744,
+            "type": "CUtlVector<FeWorldCollisionParams_t>"
+          },
+          "m_flAddWorldCollisionRadius": {
+            "offset": 1764,
+            "type": "float32"
+          },
+          "m_flDefaultExpAirDrag": {
+            "offset": 1744,
+            "type": "float32"
+          },
+          "m_flDefaultExpQuadAirDrag": {
+            "offset": 1752,
+            "type": "float32"
+          },
+          "m_flDefaultGravityScale": {
+            "offset": 1736,
+            "type": "float32"
+          },
+          "m_flDefaultSurfaceStretch": {
+            "offset": 1728,
+            "type": "float32"
+          },
+          "m_flDefaultThreadStretch": {
+            "offset": 1732,
+            "type": "float32"
+          },
+          "m_flDefaultTimeDilation": {
+            "offset": 1716,
+            "type": "float32"
+          },
+          "m_flDefaultVelAirDrag": {
+            "offset": 1740,
+            "type": "float32"
+          },
+          "m_flDefaultVelQuadAirDrag": {
+            "offset": 1748,
+            "type": "float32"
+          },
+          "m_flDefaultVolumetricSolveAmount": {
+            "offset": 1768,
+            "type": "float32"
+          },
+          "m_flInternalPressure": {
+            "offset": 1712,
+            "type": "float32"
+          },
+          "m_flLocalDrag1": {
+            "offset": 1776,
+            "type": "float32"
+          },
+          "m_flLocalForce": {
+            "offset": 56,
+            "type": "float32"
+          },
+          "m_flLocalRotation": {
+            "offset": 60,
+            "type": "float32"
+          },
+          "m_flMotionSmoothCDT": {
+            "offset": 1772,
+            "type": "float32"
+          },
+          "m_flQuadVelocitySmoothRate": {
+            "offset": 1760,
+            "type": "float32"
+          },
+          "m_flRodVelocitySmoothRate": {
+            "offset": 1756,
+            "type": "float32"
+          },
+          "m_flWindDrag": {
+            "offset": 1724,
+            "type": "float32"
+          },
+          "m_flWindage": {
+            "offset": 1720,
+            "type": "float32"
+          },
+          "m_nDynamicNodeFlags": {
+            "offset": 52,
+            "type": "uint32"
+          },
+          "m_nExtraGoalIterations": {
+            "offset": 1350,
+            "type": "uint8"
+          },
+          "m_nExtraIterations": {
+            "offset": 1351,
+            "type": "uint8"
+          },
+          "m_nExtraPressureIterations": {
+            "offset": 1349,
+            "type": "uint8"
+          },
+          "m_nFirstPositionDrivenNode": {
+            "offset": 70,
+            "type": "uint16"
+          },
+          "m_nNodeBaseJiggleboneDependsCount": {
+            "offset": 86,
+            "type": "uint16"
+          },
+          "m_nNodeCount": {
+            "offset": 64,
+            "type": "uint16"
+          },
+          "m_nQuadCount1": {
+            "offset": 80,
+            "type": "uint16"
+          },
+          "m_nQuadCount2": {
+            "offset": 82,
+            "type": "uint16"
+          },
+          "m_nQuadVelocitySmoothIterations": {
+            "offset": 1782,
+            "type": "uint16"
+          },
+          "m_nReservedUint8": {
+            "offset": 1348,
+            "type": "uint8"
+          },
+          "m_nRodVelocitySmoothIterations": {
+            "offset": 1780,
+            "type": "uint16"
+          },
+          "m_nRopeCount": {
+            "offset": 88,
+            "type": "uint16"
+          },
+          "m_nRotLockStaticNodes": {
+            "offset": 68,
+            "type": "uint16"
+          },
+          "m_nSimdQuadCount1": {
+            "offset": 76,
+            "type": "uint16"
+          },
+          "m_nSimdQuadCount2": {
+            "offset": 78,
+            "type": "uint16"
+          },
+          "m_nSimdTriCount1": {
+            "offset": 72,
+            "type": "uint16"
+          },
+          "m_nSimdTriCount2": {
+            "offset": 74,
+            "type": "uint16"
+          },
+          "m_nStaticNodeFlags": {
+            "offset": 48,
+            "type": "uint32"
+          },
+          "m_nStaticNodes": {
+            "offset": 66,
+            "type": "uint16"
+          },
+          "m_nTreeDepth": {
+            "offset": 84,
+            "type": "uint16"
+          },
+          "m_nTriCount1": {
+            "offset": 1344,
+            "type": "uint16"
+          },
+          "m_nTriCount2": {
+            "offset": 1346,
+            "type": "uint16"
+          }
         },
         "metadata": [
           {
@@ -1305,21 +2649,48 @@
       },
       "PhysicsParticleId_t": {
         "fields": {
-          "m_Value": 0
+          "m_Value": {
+            "offset": 0,
+            "type": "uint32"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "RnBlendVertex_t": {
         "fields": {
-          "m_nFlags": 12,
-          "m_nIndex0": 2,
-          "m_nIndex1": 6,
-          "m_nIndex2": 10,
-          "m_nTargetIndex": 14,
-          "m_nWeight0": 0,
-          "m_nWeight1": 4,
-          "m_nWeight2": 8
+          "m_nFlags": {
+            "offset": 12,
+            "type": "uint16"
+          },
+          "m_nIndex0": {
+            "offset": 2,
+            "type": "uint16"
+          },
+          "m_nIndex1": {
+            "offset": 6,
+            "type": "uint16"
+          },
+          "m_nIndex2": {
+            "offset": 10,
+            "type": "uint16"
+          },
+          "m_nTargetIndex": {
+            "offset": 14,
+            "type": "uint16"
+          },
+          "m_nWeight0": {
+            "offset": 0,
+            "type": "uint16"
+          },
+          "m_nWeight1": {
+            "offset": 4,
+            "type": "uint16"
+          },
+          "m_nWeight2": {
+            "offset": 8,
+            "type": "uint16"
+          }
         },
         "metadata": [
           {
@@ -1331,42 +2702,150 @@
       },
       "RnBodyDesc_t": {
         "fields": {
-          "m_LocalInertiaInv": 72,
-          "m_bDragEnabled": 202,
-          "m_bEnabled": 199,
-          "m_bHasShadowController": 217,
-          "m_bIsContinuousEnabled": 201,
-          "m_bSleeping": 200,
-          "m_bSpeculativeEnabled": 216,
-          "m_flAngularDamping": 128,
-          "m_flAngularDragScale": 136,
-          "m_flAngularFluidDragScale": 144,
-          "m_flBuoyancyScale": 172,
-          "m_flGameMass": 112,
-          "m_flGravityScale": 176,
-          "m_flInertiaScaleInv": 120,
-          "m_flLinearDamping": 124,
-          "m_flLinearDragScale": 132,
-          "m_flLinearFluidDragScale": 140,
-          "m_flMassInv": 108,
-          "m_flMassScaleInv": 116,
-          "m_flTimeScale": 180,
-          "m_nBodyType": 184,
-          "m_nDynamicContinuousContactBehavior": 218,
-          "m_nGameFlags": 192,
-          "m_nGameIndex": 188,
-          "m_nMassPriority": 198,
-          "m_nMinPositionIterations": 197,
-          "m_nMinVelocityIterations": 196,
-          "m_qOrientation": 20,
-          "m_sDebugName": 0,
-          "m_vAngularVelocity": 48,
-          "m_vGravity": 204,
-          "m_vLastAwakeForceAccum": 148,
-          "m_vLastAwakeTorqueAccum": 160,
-          "m_vLinearVelocity": 36,
-          "m_vLocalMassCenter": 60,
-          "m_vPosition": 8
+          "m_LocalInertiaInv": {
+            "offset": 72,
+            "type": "Vector[3]"
+          },
+          "m_bDragEnabled": {
+            "offset": 202,
+            "type": "bool"
+          },
+          "m_bEnabled": {
+            "offset": 199,
+            "type": "bool"
+          },
+          "m_bHasShadowController": {
+            "offset": 217,
+            "type": "bool"
+          },
+          "m_bIsContinuousEnabled": {
+            "offset": 201,
+            "type": "bool"
+          },
+          "m_bSleeping": {
+            "offset": 200,
+            "type": "bool"
+          },
+          "m_bSpeculativeEnabled": {
+            "offset": 216,
+            "type": "bool"
+          },
+          "m_flAngularDamping": {
+            "offset": 128,
+            "type": "float32"
+          },
+          "m_flAngularDragScale": {
+            "offset": 136,
+            "type": "float32"
+          },
+          "m_flAngularFluidDragScale": {
+            "offset": 144,
+            "type": "float32"
+          },
+          "m_flBuoyancyScale": {
+            "offset": 172,
+            "type": "float32"
+          },
+          "m_flGameMass": {
+            "offset": 112,
+            "type": "float32"
+          },
+          "m_flGravityScale": {
+            "offset": 176,
+            "type": "float32"
+          },
+          "m_flInertiaScaleInv": {
+            "offset": 120,
+            "type": "float32"
+          },
+          "m_flLinearDamping": {
+            "offset": 124,
+            "type": "float32"
+          },
+          "m_flLinearDragScale": {
+            "offset": 132,
+            "type": "float32"
+          },
+          "m_flLinearFluidDragScale": {
+            "offset": 140,
+            "type": "float32"
+          },
+          "m_flMassInv": {
+            "offset": 108,
+            "type": "float32"
+          },
+          "m_flMassScaleInv": {
+            "offset": 116,
+            "type": "float32"
+          },
+          "m_flTimeScale": {
+            "offset": 180,
+            "type": "float32"
+          },
+          "m_nBodyType": {
+            "offset": 184,
+            "type": "int32"
+          },
+          "m_nDynamicContinuousContactBehavior": {
+            "offset": 218,
+            "type": "DynamicContinuousContactBehavior_t"
+          },
+          "m_nGameFlags": {
+            "offset": 192,
+            "type": "uint32"
+          },
+          "m_nGameIndex": {
+            "offset": 188,
+            "type": "uint32"
+          },
+          "m_nMassPriority": {
+            "offset": 198,
+            "type": "int8"
+          },
+          "m_nMinPositionIterations": {
+            "offset": 197,
+            "type": "int8"
+          },
+          "m_nMinVelocityIterations": {
+            "offset": 196,
+            "type": "int8"
+          },
+          "m_qOrientation": {
+            "offset": 20,
+            "type": "QuaternionStorage"
+          },
+          "m_sDebugName": {
+            "offset": 0,
+            "type": "CUtlString"
+          },
+          "m_vAngularVelocity": {
+            "offset": 48,
+            "type": "Vector"
+          },
+          "m_vGravity": {
+            "offset": 204,
+            "type": "Vector"
+          },
+          "m_vLastAwakeForceAccum": {
+            "offset": 148,
+            "type": "Vector"
+          },
+          "m_vLastAwakeTorqueAccum": {
+            "offset": 160,
+            "type": "Vector"
+          },
+          "m_vLinearVelocity": {
+            "offset": 36,
+            "type": "Vector"
+          },
+          "m_vLocalMassCenter": {
+            "offset": 60,
+            "type": "Vector"
+          },
+          "m_vPosition": {
+            "offset": 8,
+            "type": "VectorWS"
+          }
         },
         "metadata": [
           {
@@ -1378,7 +2857,10 @@
       },
       "RnCapsuleDesc_t": {
         "fields": {
-          "m_Capsule": 24
+          "m_Capsule": {
+            "offset": 24,
+            "type": "RnCapsule_t"
+          }
         },
         "metadata": [
           {
@@ -1390,8 +2872,14 @@
       },
       "RnCapsule_t": {
         "fields": {
-          "m_flRadius": 24,
-          "m_vCenter": 0
+          "m_flRadius": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_vCenter": {
+            "offset": 0,
+            "type": "Vector[2]"
+          }
         },
         "metadata": [
           {
@@ -1403,7 +2891,10 @@
       },
       "RnCompoundDesc_t": {
         "fields": {
-          "m_Compound": 24
+          "m_Compound": {
+            "offset": 24,
+            "type": "RnCompound_t"
+          }
         },
         "metadata": [
           {
@@ -1415,14 +2906,38 @@
       },
       "RnCompound_t": {
         "fields": {
-          "m_Bounds": 96,
-          "m_Capsules": 24,
-          "m_Hulls": 48,
-          "m_Meshes": 72,
-          "m_Spheres": 0,
-          "m_flSurfaceArea": 132,
-          "m_flVolume": 136,
-          "m_vOrthographicAreas": 120
+          "m_Bounds": {
+            "offset": 96,
+            "type": "AABB_t"
+          },
+          "m_Capsules": {
+            "offset": 24,
+            "type": "CUtlVector<RnCapsule_t>"
+          },
+          "m_Hulls": {
+            "offset": 48,
+            "type": "CUtlVector<RnHull_t>"
+          },
+          "m_Meshes": {
+            "offset": 72,
+            "type": "CUtlVector<RnMesh_t>"
+          },
+          "m_Spheres": {
+            "offset": 0,
+            "type": "CUtlVector<RnSphere_t>"
+          },
+          "m_flSurfaceArea": {
+            "offset": 132,
+            "type": "float32"
+          },
+          "m_flVolume": {
+            "offset": 136,
+            "type": "float32"
+          },
+          "m_vOrthographicAreas": {
+            "offset": 120,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -1434,7 +2949,10 @@
       },
       "RnFace_t": {
         "fields": {
-          "m_nEdge": 0
+          "m_nEdge": {
+            "offset": 0,
+            "type": "uint8"
+          }
         },
         "metadata": [
           {
@@ -1446,10 +2964,22 @@
       },
       "RnHalfEdge_t": {
         "fields": {
-          "m_nFace": 3,
-          "m_nNext": 0,
-          "m_nOrigin": 2,
-          "m_nTwin": 1
+          "m_nFace": {
+            "offset": 3,
+            "type": "uint8"
+          },
+          "m_nNext": {
+            "offset": 0,
+            "type": "uint8"
+          },
+          "m_nOrigin": {
+            "offset": 2,
+            "type": "uint8"
+          },
+          "m_nTwin": {
+            "offset": 1,
+            "type": "uint8"
+          }
         },
         "metadata": [
           {
@@ -1461,7 +2991,10 @@
       },
       "RnHullDesc_t": {
         "fields": {
-          "m_Hull": 24
+          "m_Hull": {
+            "offset": 24,
+            "type": "RnHull_t"
+          }
         },
         "metadata": [
           {
@@ -1473,20 +3006,62 @@
       },
       "RnHull_t": {
         "fields": {
-          "m_Bounds": 16,
-          "m_Edges": 200,
-          "m_FacePlanes": 136,
-          "m_Faces": 224,
-          "m_MassProperties": 52,
-          "m_VertexPositions": 112,
-          "m_Vertices": 176,
-          "m_flMaxAngularRadius": 12,
-          "m_flSurfaceArea": 104,
-          "m_flVolume": 100,
-          "m_nFlags": 160,
-          "m_pRegionSVM": 168,
-          "m_vCentroid": 0,
-          "m_vOrthographicAreas": 40
+          "m_Bounds": {
+            "offset": 16,
+            "type": "AABB_t"
+          },
+          "m_Edges": {
+            "offset": 200,
+            "type": "CUtlVector<RnHalfEdge_t>"
+          },
+          "m_FacePlanes": {
+            "offset": 136,
+            "type": "CUtlVector<RnPlane_t>"
+          },
+          "m_Faces": {
+            "offset": 224,
+            "type": "CUtlVector<RnFace_t>"
+          },
+          "m_MassProperties": {
+            "offset": 52,
+            "type": "matrix3x4_t"
+          },
+          "m_VertexPositions": {
+            "offset": 112,
+            "type": "CUtlVector<Vector>"
+          },
+          "m_Vertices": {
+            "offset": 176,
+            "type": "CUtlVector<RnVertex_t>"
+          },
+          "m_flMaxAngularRadius": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_flSurfaceArea": {
+            "offset": 104,
+            "type": "float32"
+          },
+          "m_flVolume": {
+            "offset": 100,
+            "type": "float32"
+          },
+          "m_nFlags": {
+            "offset": 160,
+            "type": "uint32"
+          },
+          "m_pRegionSVM": {
+            "offset": 168,
+            "type": "CRegionSVM*"
+          },
+          "m_vCentroid": {
+            "offset": 0,
+            "type": "Vector"
+          },
+          "m_vOrthographicAreas": {
+            "offset": 40,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -1498,7 +3073,10 @@
       },
       "RnMeshDesc_t": {
         "fields": {
-          "m_Mesh": 24
+          "m_Mesh": {
+            "offset": 24,
+            "type": "RnMesh_t"
+          }
         },
         "metadata": [
           {
@@ -1510,17 +3088,50 @@
       },
       "RnMesh_t": {
         "fields": {
-          "m_Materials": 144,
-          "m_Nodes": 24,
-          "m_TriangleEdgeFlags": 120,
-          "m_Triangles": 72,
-          "m_Vertices": 48,
-          "m_Wings": 96,
-          "m_nDebugFlags": 184,
-          "m_nFlags": 180,
-          "m_vMax": 12,
-          "m_vMin": 0,
-          "m_vOrthographicAreas": 168
+          "m_Materials": {
+            "offset": 144,
+            "type": "CUtlVector<uint8>"
+          },
+          "m_Nodes": {
+            "offset": 24,
+            "type": "CUtlVector<RnNode_t>"
+          },
+          "m_TriangleEdgeFlags": {
+            "offset": 120,
+            "type": "CUtlVector<uint8>"
+          },
+          "m_Triangles": {
+            "offset": 72,
+            "type": "CUtlVector<RnTriangle_t>"
+          },
+          "m_Vertices": {
+            "offset": 48,
+            "type": "CUtlVectorSIMDPaddedVector"
+          },
+          "m_Wings": {
+            "offset": 96,
+            "type": "CUtlVector<RnWing_t>"
+          },
+          "m_nDebugFlags": {
+            "offset": 184,
+            "type": "uint32"
+          },
+          "m_nFlags": {
+            "offset": 180,
+            "type": "uint32"
+          },
+          "m_vMax": {
+            "offset": 12,
+            "type": "Vector"
+          },
+          "m_vMin": {
+            "offset": 0,
+            "type": "Vector"
+          },
+          "m_vOrthographicAreas": {
+            "offset": 168,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -1532,10 +3143,22 @@
       },
       "RnNode_t": {
         "fields": {
-          "m_nChildren": 12,
-          "m_nTriangleOffset": 28,
-          "m_vMax": 16,
-          "m_vMin": 0
+          "m_nChildren": {
+            "offset": 12,
+            "type": "uint32"
+          },
+          "m_nTriangleOffset": {
+            "offset": 28,
+            "type": "uint32"
+          },
+          "m_vMax": {
+            "offset": 16,
+            "type": "Vector"
+          },
+          "m_vMin": {
+            "offset": 0,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -1547,8 +3170,14 @@
       },
       "RnPlane_t": {
         "fields": {
-          "m_flOffset": 12,
-          "m_vNormal": 0
+          "m_flOffset": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_vNormal": {
+            "offset": 0,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {
@@ -1560,12 +3189,30 @@
       },
       "RnShapeDesc_t": {
         "fields": {
-          "m_UserFriendlyName": 8,
-          "m_bUserFriendlyNameLong": 17,
-          "m_bUserFriendlyNameSealed": 16,
-          "m_nCollisionAttributeIndex": 0,
-          "m_nSurfacePropertyIndex": 4,
-          "m_nToolMaterialHash": 20
+          "m_UserFriendlyName": {
+            "offset": 8,
+            "type": "CUtlString"
+          },
+          "m_bUserFriendlyNameLong": {
+            "offset": 17,
+            "type": "bool"
+          },
+          "m_bUserFriendlyNameSealed": {
+            "offset": 16,
+            "type": "bool"
+          },
+          "m_nCollisionAttributeIndex": {
+            "offset": 0,
+            "type": "uint32"
+          },
+          "m_nSurfacePropertyIndex": {
+            "offset": 4,
+            "type": "uint32"
+          },
+          "m_nToolMaterialHash": {
+            "offset": 20,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -1577,9 +3224,18 @@
       },
       "RnSoftbodyCapsule_t": {
         "fields": {
-          "m_flRadius": 24,
-          "m_nParticle": 28,
-          "m_vCenter": 0
+          "m_flRadius": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_nParticle": {
+            "offset": 28,
+            "type": "uint16[2]"
+          },
+          "m_vCenter": {
+            "offset": 0,
+            "type": "Vector[2]"
+          }
         },
         "metadata": [
           {
@@ -1591,7 +3247,10 @@
       },
       "RnSoftbodyParticle_t": {
         "fields": {
-          "m_flMassInv": 0
+          "m_flMassInv": {
+            "offset": 0,
+            "type": "float32"
+          }
         },
         "metadata": [
           {
@@ -1603,8 +3262,14 @@
       },
       "RnSoftbodySpring_t": {
         "fields": {
-          "m_flLength": 4,
-          "m_nParticle": 0
+          "m_flLength": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_nParticle": {
+            "offset": 0,
+            "type": "uint16[2]"
+          }
         },
         "metadata": [
           {
@@ -1616,7 +3281,10 @@
       },
       "RnSphereDesc_t": {
         "fields": {
-          "m_Sphere": 24
+          "m_Sphere": {
+            "offset": 24,
+            "type": "RnSphere_t"
+          }
         },
         "metadata": [
           {
@@ -1628,7 +3296,10 @@
       },
       "RnTriangle_t": {
         "fields": {
-          "m_nIndex": 0
+          "m_nIndex": {
+            "offset": 0,
+            "type": "int32[3]"
+          }
         },
         "metadata": [
           {
@@ -1640,7 +3311,10 @@
       },
       "RnVertex_t": {
         "fields": {
-          "m_nEdge": 0
+          "m_nEdge": {
+            "offset": 0,
+            "type": "uint8"
+          }
         },
         "metadata": [
           {
@@ -1652,7 +3326,10 @@
       },
       "RnWing_t": {
         "fields": {
-          "m_nIndex": 0
+          "m_nIndex": {
+            "offset": 0,
+            "type": "int32[3]"
+          }
         },
         "metadata": [
           {
@@ -1664,7 +3341,10 @@
       },
       "VPhysEntityId_t": {
         "fields": {
-          "m_Id": 0
+          "m_Id": {
+            "offset": 0,
+            "type": "uint32"
+          }
         },
         "metadata": [
           {
@@ -1676,46 +3356,94 @@
       },
       "VertexPositionColor_t": {
         "fields": {
-          "m_vPosition": 0
+          "m_vPosition": {
+            "offset": 0,
+            "type": "Vector"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "VertexPositionNormal_t": {
         "fields": {
-          "m_vNormal": 12,
-          "m_vPosition": 0
+          "m_vNormal": {
+            "offset": 12,
+            "type": "Vector"
+          },
+          "m_vPosition": {
+            "offset": 0,
+            "type": "Vector"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "constraint_axislimit_t": {
         "fields": {
-          "flMaxRotation": 4,
-          "flMinRotation": 0,
-          "flMotorMaxTorque": 12,
-          "flMotorTargetAngSpeed": 8
+          "flMaxRotation": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "flMinRotation": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "flMotorMaxTorque": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "flMotorTargetAngSpeed": {
+            "offset": 8,
+            "type": "float32"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "constraint_breakableparams_t": {
         "fields": {
-          "bodyMassScale": 12,
-          "forceLimit": 4,
-          "isActive": 20,
-          "strength": 0,
-          "torqueLimit": 8
+          "bodyMassScale": {
+            "offset": 12,
+            "type": "float32[2]"
+          },
+          "forceLimit": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "isActive": {
+            "offset": 20,
+            "type": "bool"
+          },
+          "strength": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "torqueLimit": {
+            "offset": 8,
+            "type": "float32"
+          }
         },
         "metadata": [],
         "parent": null
       },
       "constraint_hingeparams_t": {
         "fields": {
-          "constraint": 40,
-          "hingeAxis": 24,
-          "worldAxisDirection": 12,
-          "worldPosition": 0
+          "constraint": {
+            "offset": 40,
+            "type": "constraint_breakableparams_t"
+          },
+          "hingeAxis": {
+            "offset": 24,
+            "type": "constraint_axislimit_t"
+          },
+          "worldAxisDirection": {
+            "offset": 12,
+            "type": "Vector"
+          },
+          "worldPosition": {
+            "offset": 0,
+            "type": "VectorWS"
+          }
         },
         "metadata": [
           {
@@ -1727,7 +3455,10 @@
       },
       "vphysics_save_cphysicsbody_t": {
         "fields": {
-          "m_nOldPointer": 224
+          "m_nOldPointer": {
+            "offset": 224,
+            "type": "uint64"
+          }
         },
         "metadata": [
           {
@@ -1739,16 +3470,46 @@
       },
       "vphysics_save_ragdoll_control_t": {
         "fields": {
-          "m_bIgnoreTeleport": 14,
-          "m_bRequiresDynamicBodies": 13,
-          "m_bSolidCollisionAtZeroWeight": 12,
-          "m_flMaxSpringFrequency": 4,
-          "m_flMaxStretch": 8,
-          "m_flMinSpringFrequency": 0,
-          "m_nBodyCount": 52,
-          "m_vAngularVelocityAccumulator": 28,
-          "m_vForceAccumulator": 40,
-          "m_vLinearVelocityAccumulator": 16
+          "m_bIgnoreTeleport": {
+            "offset": 14,
+            "type": "bool"
+          },
+          "m_bRequiresDynamicBodies": {
+            "offset": 13,
+            "type": "bool"
+          },
+          "m_bSolidCollisionAtZeroWeight": {
+            "offset": 12,
+            "type": "bool"
+          },
+          "m_flMaxSpringFrequency": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flMaxStretch": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_flMinSpringFrequency": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "m_nBodyCount": {
+            "offset": 52,
+            "type": "int32"
+          },
+          "m_vAngularVelocityAccumulator": {
+            "offset": 28,
+            "type": "RotationVector"
+          },
+          "m_vForceAccumulator": {
+            "offset": 40,
+            "type": "Vector"
+          },
+          "m_vLinearVelocityAccumulator": {
+            "offset": 16,
+            "type": "Vector"
+          }
         },
         "metadata": [
           {

@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-17 07:15:01.872389200 UTC
+// 2026-07-18 23:11:06.841135700 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: server.dll
