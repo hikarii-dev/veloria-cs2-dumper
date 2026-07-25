@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-25 06:23:19.183891200 UTC
+// 2026-07-25 07:34:29.478944500 UTC
 
 #![allow(non_upper_case_globals, unused)]
 

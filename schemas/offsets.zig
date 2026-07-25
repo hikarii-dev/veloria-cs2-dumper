@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-25 06:23:19.186304 UTC
+// 2026-07-25 07:34:29.480633100 UTC
 
 pub const cs2_dumper = struct {
     pub const offsets = struct {

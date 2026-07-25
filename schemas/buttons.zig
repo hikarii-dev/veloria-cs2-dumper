@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-25 06:23:19.184054200 UTC
+// 2026-07-25 07:34:29.479073400 UTC
 
 pub const cs2_dumper = struct {
     // Module: client.dll

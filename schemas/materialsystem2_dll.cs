@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-25 06:23:19.218219700 UTC
+// 2026-07-25 07:34:29.510317100 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: materialsystem2.dll

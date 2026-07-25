@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-25 06:23:19.221787300 UTC
+// 2026-07-25 07:34:29.513043900 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: particles.dll
