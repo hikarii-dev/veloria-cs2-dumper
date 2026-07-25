@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-25 06:09:55.254316300 UTC
+// 2026-07-25 06:23:19.186139 UTC
 
 #![allow(non_upper_case_globals, unused)]
 
@@ -14,8 +14,10 @@ pub mod cs2_dumper {
             pub const dwGlobalVars: usize = 0x2090D60;
             pub const dwGlowManager: usize = 0x23A1708;
             pub const dwLocalPlayerController: usize = 0x237FB70;
+            pub const dwLocalPlayerPawn: usize = 0x23A5238;
             pub const dwPlantedC4: usize = 0x236F658;
             pub const dwPrediction: usize = 0x23A5140;
+            pub const dwViewAngles: usize = 0x23BAE18;
             pub const dwViewMatrix: usize = 0x23AA340;
             pub const dwViewRender: usize = 0x23AA398;
             pub const dwWeaponC4: usize = 0x231DB10;

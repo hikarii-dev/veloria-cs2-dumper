@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-25 06:09:55.313868100 UTC
+// 2026-07-25 06:23:19.241976 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: schemasystem.dll

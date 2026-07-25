@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-25 06:09:55.254033500 UTC
+// 2026-07-25 06:23:19.185803700 UTC
 
 #pragma once
 #include <cstddef>
@@ -16,8 +16,10 @@ namespace cs2_dumper {
             constexpr std::ptrdiff_t dwGlobalVars = 0x2090D60;
             constexpr std::ptrdiff_t dwGlowManager = 0x23A1708;
             constexpr std::ptrdiff_t dwLocalPlayerController = 0x237FB70;
+            constexpr std::ptrdiff_t dwLocalPlayerPawn = 0x23A5238;
             constexpr std::ptrdiff_t dwPlantedC4 = 0x236F658;
             constexpr std::ptrdiff_t dwPrediction = 0x23A5140;
+            constexpr std::ptrdiff_t dwViewAngles = 0x23BAE18;
             constexpr std::ptrdiff_t dwViewMatrix = 0x23AA340;
             constexpr std::ptrdiff_t dwViewRender = 0x23AA398;
             constexpr std::ptrdiff_t dwWeaponC4 = 0x231DB10;

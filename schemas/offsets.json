@@ -7,8 +7,10 @@
     "dwGlobalVars": 34147680,
     "dwGlowManager": 37361416,
     "dwLocalPlayerController": 37223280,
+    "dwLocalPlayerPawn": 37376568,
     "dwPlantedC4": 37156440,
     "dwPrediction": 37376320,
+    "dwViewAngles": 37465624,
     "dwViewMatrix": 37397312,
     "dwViewRender": 37397400,
     "dwWeaponC4": 36821776

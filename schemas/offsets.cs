@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-25 06:09:55.253895800 UTC
+// 2026-07-25 06:23:19.185630900 UTC
 
 namespace CS2Dumper.Offsets {
     // Module: client.dll
@@ -11,8 +11,10 @@ namespace CS2Dumper.Offsets {
         public const nint dwGlobalVars = 0x2090D60;
         public const nint dwGlowManager = 0x23A1708;
         public const nint dwLocalPlayerController = 0x237FB70;
+        public const nint dwLocalPlayerPawn = 0x23A5238;
         public const nint dwPlantedC4 = 0x236F658;
         public const nint dwPrediction = 0x23A5140;
+        public const nint dwViewAngles = 0x23BAE18;
         public const nint dwViewMatrix = 0x23AA340;
         public const nint dwViewRender = 0x23AA398;
         public const nint dwWeaponC4 = 0x231DB10;
