@@ -1,11 +1,11 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-22 16:03:06.445420500 UTC
+// 2026-07-25 06:09:55.286024400 UTC
 
 pub const cs2_dumper = struct {
     pub const schemas = struct {
         // Module: client.dll
         // Class count: 563
-        // Enum count: 14
+        // Enum count: 15
         pub const client_dll = struct {
             // Alignment: 4
             // Member count: 5
@@ -143,6 +143,11 @@ pub const cs2_dumper = struct {
                 COMP_MAT_MUTATOR_CONDITION_INPUT_CONTAINER_EXISTS = 0x0,
                 COMP_MAT_MUTATOR_CONDITION_INPUT_CONTAINER_VALUE_EXISTS = 0x1,
                 COMP_MAT_MUTATOR_CONDITION_INPUT_CONTAINER_VALUE_EQUALS = 0x2
+            };
+            // Alignment: 0
+            // Member count: 0
+            pub const _B_w__ = enum(u64) {
+
             };
             // Parent: C_CSGO_TeamPreviewCharacterPosition
             // Field count: 0

@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-22 16:03:06.414452500 UTC
+// 2026-07-25 06:09:55.251189500 UTC
 
 namespace CS2Dumper {
     // Module: client.dll

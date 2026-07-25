@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-22 16:03:06.436463900 UTC
+// 2026-07-25 06:09:55.273960900 UTC
 
 #pragma once
 #include <cstddef>
@@ -9,7 +9,7 @@ namespace cs2_dumper {
     namespace schemas {
         // Module: client.dll
         // Class count: 563
-        // Enum count: 14
+        // Enum count: 15
         namespace client_dll {
             // Alignment: 4
             // Member count: 5
@@ -147,6 +147,11 @@ namespace cs2_dumper {
                 COMP_MAT_MUTATOR_CONDITION_INPUT_CONTAINER_EXISTS = 0x0,
                 COMP_MAT_MUTATOR_CONDITION_INPUT_CONTAINER_VALUE_EXISTS = 0x1,
                 COMP_MAT_MUTATOR_CONDITION_INPUT_CONTAINER_VALUE_EQUALS = 0x2
+            };
+            // Alignment: 0
+            // Member count: 0
+            enum class _B_w__ : uint64_t {
+
             };
             // Parent: C_CSGO_TeamPreviewCharacterPosition
             // Field count: 0
