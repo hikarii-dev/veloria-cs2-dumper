@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-25 07:34:29.481317300 UTC
+// 2026-07-26 09:15:57.112047100 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: animationsystem.dll
