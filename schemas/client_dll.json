@@ -16976,6 +16976,21 @@
           "SYNC_WAIT_FOR_COMPLETION": 0
         },
         "type": "uint32"
+      },
+      "_U____": {
+        "alignment": 0,
+        "members": {},
+        "type": "uint64"
+      },
+      "______": {
+        "alignment": 0,
+        "members": {},
+        "type": "uint64"
+      },
+      "_b____": {
+        "alignment": 0,
+        "members": {},
+        "type": "uint64"
       }
     }
   }

@@ -1,9 +1,9 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-26 09:15:57.212129800 UTC
+// 2026-07-27 13:59:19.224441400 UTC
 
 namespace CS2Dumper.Info {
     public static class BuildInfo {
-        public const string Timestamp = "2026-07-26 09:15:57 UTC";
+        public const string Timestamp = "2026-07-27 13:59:19 UTC";
         public const uint BuildNumber = 14172;
     }
 }
