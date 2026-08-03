@@ -4,12 +4,12 @@ pub mod offsets {
     // client.dll
     pub mod client {
         pub const GLOBALS: usize = 0x2090D60;
-        pub const LOCAL_CONTROLLER: usize = 0x237FB70;
+        pub const LOCAL_CONTROLLER: usize = 0x237FB80;
         pub const GLOBAL_ENTITY_LIST: usize = 0x21D1DF0;
         pub const VIEW_MATRIX: usize = 0x23AA340;
         pub const DW_CSGO_INPUT: usize = 0x2314BF0;
-        pub const DW_ENTITY_LIST: usize = 0x254FE70;
-        pub const DW_GAME_ENTITY_SYSTEM: usize = 0x254FE70;
+        pub const DW_ENTITY_LIST: usize = 0x254FE80;
+        pub const DW_GAME_ENTITY_SYSTEM: usize = 0x254FE80;
         pub const DW_GAME_RULES: usize = 0x23A49D8;
         pub const DW_GLOBAL_VARS: usize = 0x2090D60;
         pub const DW_PLANTED_C4: usize = 0x236F658;

@@ -5,12 +5,12 @@ pub const cs2_dumper = struct {
         // client.dll
         pub const client = struct {
             pub const Globals: usize = 0x2090D60;
-            pub const LocalController: usize = 0x237FB70;
+            pub const LocalController: usize = 0x237FB80;
             pub const GlobalEntityList: usize = 0x21D1DF0;
             pub const ViewMatrix: usize = 0x23AA340;
             pub const dwCSGOInput: usize = 0x2314BF0;
-            pub const dwEntityList: usize = 0x254FE70;
-            pub const dwGameEntitySystem: usize = 0x254FE70;
+            pub const dwEntityList: usize = 0x254FE80;
+            pub const dwGameEntitySystem: usize = 0x254FE80;
             pub const dwGameRules: usize = 0x23A49D8;
             pub const dwGlobalVars: usize = 0x2090D60;
             pub const dwPlantedC4: usize = 0x236F658;
