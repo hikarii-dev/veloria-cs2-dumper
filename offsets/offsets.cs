@@ -3,27 +3,27 @@
 namespace CS2Dumper.Offsets {
     // client.dll
     public static class Client {
-        public const nint Globals = 0x2094D38;
-        public const nint LocalController = 0x2383DB0;
-        public const nint GlobalEntityList = 0x21D5FE0;
-        public const nint ViewMatrix = 0x23AE550;
-        public const nint dwCSGOInput = 0x2318E20;
-        public const nint dwEntityList = 0x2554050;
-        public const nint dwGameEntitySystem = 0x2554050;
-        public const nint dwGameRules = 0x23A8BD8;
-        public const nint dwGlobalVars = 0x2094D38;
-        public const nint dwPlantedC4 = 0x2373898;
-        public const nint dwViewRender = 0x23AE5A8;
-        public const nint dwWeaponC4 = 0x20123A0;
+        public const nint Globals = 0x2095D48;
+        public const nint LocalController = 0x2384DB0;
+        public const nint GlobalEntityList = 0x21D6FE0;
+        public const nint ViewMatrix = 0x23AF550;
+        public const nint dwCSGOInput = 0x2319E20;
+        public const nint dwEntityList = 0x2555050;
+        public const nint dwGameEntitySystem = 0x2555050;
+        public const nint dwGameRules = 0x23A9BD8;
+        public const nint dwGlobalVars = 0x2095D48;
+        public const nint dwPlantedC4 = 0x2374898;
+        public const nint dwViewRender = 0x23AF5A8;
+        public const nint dwWeaponC4 = 0x20133A0;
     }
     // engine2.dll
     public static class Engine2 {
-        public const nint BuildInfo = 0x918D90;
-        public const nint NetworkGameClientInstance = 0x90D490;
+        public const nint BuildInfo = 0x918DB0;
+        public const nint NetworkGameClientInstance = 0x90D4B0;
         public const nint dwBuildNumber = 0x611CE0;
-        public const nint dwNetworkGameClient = 0x90D490;
-        public const nint dwWindowHeight = 0x9118BC;
-        public const nint dwWindowWidth = 0x9118B8;
+        public const nint dwNetworkGameClient = 0x90D4B0;
+        public const nint dwWindowHeight = 0x9118DC;
+        public const nint dwWindowWidth = 0x9118D8;
     }
     // tier0.dll
     public static class Tier0 {
