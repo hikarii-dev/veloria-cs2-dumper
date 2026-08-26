@@ -3,6 +3,6 @@
 namespace CS2Dumper {
 public static class Info {
 public const uint BuildNumber = 24934554;
-public const string Timestamp = "2026-08-26 12:55:56 UTC";
+public const string Timestamp = "2026-08-26 13:53:29 UTC";
 }
 }
