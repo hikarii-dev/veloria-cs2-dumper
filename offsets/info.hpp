@@ -3,6 +3,6 @@
 #include <cstddef>
 
 namespace cs2_dumper {
-constexpr auto build_number = 24934554;
-constexpr auto timestamp = "2026-08-26 20:32:58 UTC";
+constexpr auto build_number = 24957633;
+constexpr auto timestamp = "2026-08-27 00:28:37 UTC";
 } // namespace cs2_dumper

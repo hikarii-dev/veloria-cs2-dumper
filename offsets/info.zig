@@ -1,6 +1,6 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
 
 pub const cs2_dumper = struct {
-pub const build_number: u32 = 24934554;
-pub const timestamp: []const u8 = "2026-08-26 20:32:58 UTC";
+pub const build_number: u32 = 24957633;
+pub const timestamp: []const u8 = "2026-08-27 00:28:37 UTC";
 };
