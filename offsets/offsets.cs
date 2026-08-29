@@ -8,8 +8,8 @@ namespace CS2Dumper.Offsets {
         public const nint GlobalEntityList = 0x21F1260;
         public const nint ViewMatrix = 0x23CB830;
         public const nint dwCSGOInput = 0x20B3198;
-        public const nint dwEntityList = 0x2571230;
-        public const nint dwGameEntitySystem = 0x2571230;
+        public const nint dwEntityList = 0x2571220;
+        public const nint dwGameEntitySystem = 0x2571220;
         public const nint dwGameRules = 0x23C5D28;
         public const nint dwGlobalVars = 0x20AF5F0;
         public const nint dwPlantedC4 = 0x2390A18;
@@ -18,12 +18,12 @@ namespace CS2Dumper.Offsets {
     }
     // engine2.dll
     public static class Engine2 {
-        public const nint BuildInfo = 0x918DB0;
+        public const nint BuildInfo = 0x918DA0;
         public const nint NetworkGameClientInstance = 0x90D4B0;
         public const nint dwBuildNumber = 0x611CE0;
         public const nint dwNetworkGameClient = 0x90D4B0;
-        public const nint dwWindowHeight = 0x9118DC;
-        public const nint dwWindowWidth = 0x9118D8;
+        public const nint dwWindowHeight = 0x9118D4;
+        public const nint dwWindowWidth = 0x9118D0;
     }
     // tier0.dll
     public static class Tier0 {

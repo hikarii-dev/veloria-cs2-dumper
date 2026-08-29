@@ -6,8 +6,8 @@
       "LocalController": 37359408,
       "ViewMatrix": 37533744,
       "dwCSGOInput": 34288024,
-      "dwEntityList": 39260720,
-      "dwGameEntitySystem": 39260720,
+      "dwEntityList": 39260704,
+      "dwGameEntitySystem": 39260704,
       "dwGameRules": 37510440,
       "dwGlobalVars": 34272752,
       "dwPlantedC4": 37292568,
@@ -15,12 +15,12 @@
       "dwWeaponC4": 33735584
     },
     "engine2.dll": {
-      "BuildInfo": 9538992,
+      "BuildInfo": 9538976,
       "NetworkGameClientInstance": 9491632,
       "dwBuildNumber": 6364384,
       "dwNetworkGameClient": 9491632,
-      "dwWindowHeight": 9509084,
-      "dwWindowWidth": 9509080
+      "dwWindowHeight": 9509076,
+      "dwWindowWidth": 9509072
     },
     "inputsystem.dll": {
       "dwInputSystem": 285600

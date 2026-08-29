@@ -8,8 +8,8 @@ pub mod offsets {
         pub const GLOBAL_ENTITY_LIST: usize = 0x21F1260;
         pub const VIEW_MATRIX: usize = 0x23CB830;
         pub const DW_CSGO_INPUT: usize = 0x20B3198;
-        pub const DW_ENTITY_LIST: usize = 0x2571230;
-        pub const DW_GAME_ENTITY_SYSTEM: usize = 0x2571230;
+        pub const DW_ENTITY_LIST: usize = 0x2571220;
+        pub const DW_GAME_ENTITY_SYSTEM: usize = 0x2571220;
         pub const DW_GAME_RULES: usize = 0x23C5D28;
         pub const DW_GLOBAL_VARS: usize = 0x20AF5F0;
         pub const DW_PLANTED_C4: usize = 0x2390A18;
@@ -18,12 +18,12 @@ pub mod offsets {
     }
     // engine2.dll
     pub mod engine2 {
-        pub const BUILD_INFO: usize = 0x918DB0;
+        pub const BUILD_INFO: usize = 0x918DA0;
         pub const NETWORK_GAME_CLIENT_INSTANCE: usize = 0x90D4B0;
         pub const DW_BUILD_NUMBER: usize = 0x611CE0;
         pub const DW_NETWORK_GAME_CLIENT: usize = 0x90D4B0;
-        pub const DW_WINDOW_HEIGHT: usize = 0x9118DC;
-        pub const DW_WINDOW_WIDTH: usize = 0x9118D8;
+        pub const DW_WINDOW_HEIGHT: usize = 0x9118D4;
+        pub const DW_WINDOW_WIDTH: usize = 0x9118D0;
     }
     // tier0.dll
     pub mod tier0 {

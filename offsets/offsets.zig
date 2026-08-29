@@ -9,8 +9,8 @@ pub const cs2_dumper = struct {
             pub const GlobalEntityList: usize = 0x21F1260;
             pub const ViewMatrix: usize = 0x23CB830;
             pub const dwCSGOInput: usize = 0x20B3198;
-            pub const dwEntityList: usize = 0x2571230;
-            pub const dwGameEntitySystem: usize = 0x2571230;
+            pub const dwEntityList: usize = 0x2571220;
+            pub const dwGameEntitySystem: usize = 0x2571220;
             pub const dwGameRules: usize = 0x23C5D28;
             pub const dwGlobalVars: usize = 0x20AF5F0;
             pub const dwPlantedC4: usize = 0x2390A18;
@@ -19,12 +19,12 @@ pub const cs2_dumper = struct {
         };
         // engine2.dll
         pub const engine2 = struct {
-            pub const BuildInfo: usize = 0x918DB0;
+            pub const BuildInfo: usize = 0x918DA0;
             pub const NetworkGameClientInstance: usize = 0x90D4B0;
             pub const dwBuildNumber: usize = 0x611CE0;
             pub const dwNetworkGameClient: usize = 0x90D4B0;
-            pub const dwWindowHeight: usize = 0x9118DC;
-            pub const dwWindowWidth: usize = 0x9118D8;
+            pub const dwWindowHeight: usize = 0x9118D4;
+            pub const dwWindowWidth: usize = 0x9118D0;
         };
         // tier0.dll
         pub const tier0 = struct {
