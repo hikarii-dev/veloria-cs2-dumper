@@ -3,27 +3,27 @@
 pub mod offsets {
     // client.dll
     pub mod client {
-        pub const GLOBALS: usize = 0x20AF5F0;
-        pub const LOCAL_CONTROLLER: usize = 0x23A0F30;
-        pub const GLOBAL_ENTITY_LIST: usize = 0x21F1260;
-        pub const VIEW_MATRIX: usize = 0x23CB830;
-        pub const DW_CSGO_INPUT: usize = 0x20B3198;
-        pub const DW_ENTITY_LIST: usize = 0x2571220;
-        pub const DW_GAME_ENTITY_SYSTEM: usize = 0x2571220;
-        pub const DW_GAME_RULES: usize = 0x23C5D28;
-        pub const DW_GLOBAL_VARS: usize = 0x20AF5F0;
-        pub const DW_PLANTED_C4: usize = 0x2390A18;
-        pub const DW_VIEW_RENDER: usize = 0x23CB898;
-        pub const DW_WEAPON_C4: usize = 0x202C3A0;
+        pub const GLOBALS: usize = 0x20B57C0;
+        pub const LOCAL_CONTROLLER: usize = 0x23A78D0;
+        pub const GLOBAL_ENTITY_LIST: usize = 0x21F7760;
+        pub const VIEW_MATRIX: usize = 0x23D21F0;
+        pub const DW_CSGO_INPUT: usize = 0x20B93A8;
+        pub const DW_ENTITY_LIST: usize = 0x2577BE0;
+        pub const DW_GAME_ENTITY_SYSTEM: usize = 0x2577BE0;
+        pub const DW_GAME_RULES: usize = 0x23CC6C8;
+        pub const DW_GLOBAL_VARS: usize = 0x20B57C0;
+        pub const DW_PLANTED_C4: usize = 0x23973B8;
+        pub const DW_VIEW_RENDER: usize = 0x23D2258;
+        pub const DW_WEAPON_C4: usize = 0x2032390;
     }
     // engine2.dll
     pub mod engine2 {
-        pub const BUILD_INFO: usize = 0x918DA0;
-        pub const NETWORK_GAME_CLIENT_INSTANCE: usize = 0x90D4B0;
-        pub const DW_BUILD_NUMBER: usize = 0x611CE0;
-        pub const DW_NETWORK_GAME_CLIENT: usize = 0x90D4B0;
-        pub const DW_WINDOW_HEIGHT: usize = 0x9118D4;
-        pub const DW_WINDOW_WIDTH: usize = 0x9118D0;
+        pub const BUILD_INFO: usize = 0x919F90;
+        pub const NETWORK_GAME_CLIENT_INSTANCE: usize = 0x90E6A0;
+        pub const DW_BUILD_NUMBER: usize = 0x612CF0;
+        pub const DW_NETWORK_GAME_CLIENT: usize = 0x90E6A0;
+        pub const DW_WINDOW_HEIGHT: usize = 0x912AC4;
+        pub const DW_WINDOW_WIDTH: usize = 0x912AC0;
     }
     // tier0.dll
     pub mod tier0 {
