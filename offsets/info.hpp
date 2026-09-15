@@ -4,5 +4,5 @@
 
 namespace cs2_dumper {
 constexpr auto build_number = 25218825;
-constexpr auto timestamp = "2026-09-15 12:47:43 UTC";
+constexpr auto timestamp = "2026-09-15 17:28:40 UTC";
 } // namespace cs2_dumper
