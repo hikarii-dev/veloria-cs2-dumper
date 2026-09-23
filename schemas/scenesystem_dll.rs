@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-07-27 13:59:19.167027200 UTC
+// 2026-09-23 00:15:28.324695300 UTC
 
 #![allow(non_upper_case_globals,non_camel_case_types,non_snake_case,unused)]
 
@@ -7,7 +7,7 @@ pub mod cs2_dumper {
     pub mod schemas {
         // Module: scenesystem.dll
         // Class count: 9
-        // Enum count: 6
+        // Enum count: 7
         pub mod scenesystem_dll {
             // Alignment: 4
             // Member count: 3
@@ -16,6 +16,22 @@ pub mod cs2_dumper {
                 SCENEOBJECT_MESHLET_VIS_NONE = 0x0,
                 SCENEOBJECT_MESHLET_VIS_MESHLET = 0x1,
                 SCENEOBJECT_MESHLET_VIS_CULLED = 0x2
+            }
+            // Alignment: 4
+            // Member count: 11
+            #[repr(u32)]
+            pub enum SceneStatsSections_t {
+                SCENE_STATS_NONE = 0x0,
+                SCENE_STATS_FRAME = 0x1,
+                SCENE_STATS_GEOMETRY = 0x2,
+                SCENE_STATS_CULLING = 0x4,
+                SCENE_STATS_MATERIALS = 0x8,
+                SCENE_STATS_LIGHTING = 0x10,
+                SCENE_STATS_RAYTRACING = 0x20,
+                SCENE_STATS_INTERNALS = 0x40,
+                SCENE_STATS_RENDERDEVICE = 0x80,
+                SCENE_STATS_ALL = 0xFF,
+                SCENE_STATS_DEFAULT = 0x7F
             }
             // Alignment: 4
             // Member count: 7
