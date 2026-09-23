@@ -6,43 +6,43 @@ namespace cs2_dumper {
 namespace offsets {
     // client.dll
     namespace client {
-        constexpr std::ptrdiff_t Globals = 0x2095D48;
-        constexpr std::ptrdiff_t LocalController = 0x2384DB0;
-        constexpr std::ptrdiff_t GlobalEntityList = 0x21D6FE0;
-        constexpr std::ptrdiff_t ViewMatrix = 0x23AF550;
-        constexpr std::ptrdiff_t dwCSGOInput = 0x2319E20;
-        constexpr std::ptrdiff_t dwEntityList = 0x2555050;
-        constexpr std::ptrdiff_t dwGameEntitySystem = 0x2555050;
-        constexpr std::ptrdiff_t dwGameRules = 0x23A9BD8;
-        constexpr std::ptrdiff_t dwGlobalVars = 0x2095D48;
-        constexpr std::ptrdiff_t dwPlantedC4 = 0x2374898;
-        constexpr std::ptrdiff_t dwViewRender = 0x23AF5A8;
-        constexpr std::ptrdiff_t dwWeaponC4 = 0x20133A0;
+        constexpr std::ptrdiff_t Globals = 0x2226F08;
+        constexpr std::ptrdiff_t LocalController = 0x25324D8;
+        constexpr std::ptrdiff_t GlobalEntityList = 0x23652F0;
+        constexpr std::ptrdiff_t ViewMatrix = 0x25608E0;
+        constexpr std::ptrdiff_t dwCSGOInput = 0x222A8E8;
+        constexpr std::ptrdiff_t dwEntityList = 0x2710038;
+        constexpr std::ptrdiff_t dwGameEntitySystem = 0x2710038;
+        constexpr std::ptrdiff_t dwGameRules = 0x255AA88;
+        constexpr std::ptrdiff_t dwGlobalVars = 0x2226F08;
+        constexpr std::ptrdiff_t dwPlantedC4 = 0x24C3D28;
+        constexpr std::ptrdiff_t dwViewRender = 0x25611A0;
+        constexpr std::ptrdiff_t dwWeaponC4 = 0x21B6FA0;
     }
     // engine2.dll
     namespace engine2 {
-        constexpr std::ptrdiff_t BuildInfo = 0x918DB0;
-        constexpr std::ptrdiff_t NetworkGameClientInstance = 0x90D4B0;
-        constexpr std::ptrdiff_t dwBuildNumber = 0x611CE0;
-        constexpr std::ptrdiff_t dwNetworkGameClient = 0x90D4B0;
-        constexpr std::ptrdiff_t dwWindowHeight = 0x9118DC;
-        constexpr std::ptrdiff_t dwWindowWidth = 0x9118D8;
+        constexpr std::ptrdiff_t BuildInfo = 0x925990;
+        constexpr std::ptrdiff_t NetworkGameClientInstance = 0x91A150;
+        constexpr std::ptrdiff_t dwBuildNumber = 0x61E930;
+        constexpr std::ptrdiff_t dwNetworkGameClient = 0x91A150;
+        constexpr std::ptrdiff_t dwWindowHeight = 0x91E4DC;
+        constexpr std::ptrdiff_t dwWindowWidth = 0x91E4D8;
     }
     // tier0.dll
     namespace tier0 {
-        constexpr std::ptrdiff_t CCVars = 0x3A44F0;
+        constexpr std::ptrdiff_t CCVars = 0x3AC670;
     }
     // schemasystem.dll
     namespace schemasystem {
-        constexpr std::ptrdiff_t SchemaSystem = 0x75730;
+        constexpr std::ptrdiff_t SchemaSystem = 0x76710;
     }
     // inputsystem.dll
     namespace inputsystem {
-        constexpr std::ptrdiff_t dwInputSystem = 0x45BA0;
+        constexpr std::ptrdiff_t dwInputSystem = 0x46BC0;
     }
     // soundsystem.dll
     namespace soundsystem {
-        constexpr std::ptrdiff_t dwSoundSystem = 0x661C80;
+        constexpr std::ptrdiff_t dwSoundSystem = 0x6497F0;
     }
 } // namespace offsets
 } // namespace cs2_dumper
