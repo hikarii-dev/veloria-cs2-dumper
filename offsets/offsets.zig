@@ -4,27 +4,27 @@ pub const cs2_dumper = struct {
     pub const offsets = struct {
         // client.dll
         pub const client = struct {
-            pub const Globals: usize = 0x2227F08;
-            pub const LocalController: usize = 0x25334D8;
-            pub const GlobalEntityList: usize = 0x23662F0;
-            pub const ViewMatrix: usize = 0x25618F0;
-            pub const dwCSGOInput: usize = 0x222B8E8;
-            pub const dwEntityList: usize = 0x2711048;
-            pub const dwGameEntitySystem: usize = 0x2711048;
-            pub const dwGameRules: usize = 0x255BA98;
-            pub const dwGlobalVars: usize = 0x2227F08;
-            pub const dwPlantedC4: usize = 0x24C4E20;
-            pub const dwViewRender: usize = 0x25621B0;
-            pub const dwWeaponC4: usize = 0x21B7FA0;
+            pub const Globals: usize = 0x2229F88;
+            pub const LocalController: usize = 0x2535598;
+            pub const GlobalEntityList: usize = 0x23683F0;
+            pub const ViewMatrix: usize = 0x25639A0;
+            pub const dwCSGOInput: usize = 0x222D968;
+            pub const dwEntityList: usize = 0x27130E8;
+            pub const dwGameEntitySystem: usize = 0x27130E8;
+            pub const dwGameRules: usize = 0x255A858;
+            pub const dwGlobalVars: usize = 0x2229F88;
+            pub const dwPlantedC4: usize = 0x24C7380;
+            pub const dwViewRender: usize = 0x2564260;
+            pub const dwWeaponC4: usize = 0x21B9FA0;
         };
         // engine2.dll
         pub const engine2 = struct {
-            pub const BuildInfo: usize = 0x925990;
-            pub const NetworkGameClientInstance: usize = 0x91A150;
-            pub const dwBuildNumber: usize = 0x61E930;
-            pub const dwNetworkGameClient: usize = 0x91A150;
-            pub const dwWindowHeight: usize = 0x91E4DC;
-            pub const dwWindowWidth: usize = 0x91E4D8;
+            pub const BuildInfo: usize = 0x926A00;
+            pub const NetworkGameClientInstance: usize = 0x91B1C0;
+            pub const dwBuildNumber: usize = 0x61F930;
+            pub const dwNetworkGameClient: usize = 0x91B1C0;
+            pub const dwWindowHeight: usize = 0x91F544;
+            pub const dwWindowWidth: usize = 0x91F540;
         };
         // tier0.dll
         pub const tier0 = struct {
