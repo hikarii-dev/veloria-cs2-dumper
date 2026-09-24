@@ -4,18 +4,18 @@ pub const cs2_dumper = struct {
     pub const offsets = struct {
         // client.dll
         pub const client = struct {
-            pub const Globals: usize = 0x2226F08;
-            pub const LocalController: usize = 0x25324D8;
-            pub const GlobalEntityList: usize = 0x23652F0;
-            pub const ViewMatrix: usize = 0x25608E0;
-            pub const dwCSGOInput: usize = 0x222A8E8;
-            pub const dwEntityList: usize = 0x2710038;
-            pub const dwGameEntitySystem: usize = 0x2710038;
-            pub const dwGameRules: usize = 0x255AA88;
-            pub const dwGlobalVars: usize = 0x2226F08;
-            pub const dwPlantedC4: usize = 0x24C3D28;
-            pub const dwViewRender: usize = 0x25611A0;
-            pub const dwWeaponC4: usize = 0x21B6FA0;
+            pub const Globals: usize = 0x2227F08;
+            pub const LocalController: usize = 0x25334D8;
+            pub const GlobalEntityList: usize = 0x23662F0;
+            pub const ViewMatrix: usize = 0x25618F0;
+            pub const dwCSGOInput: usize = 0x222B8E8;
+            pub const dwEntityList: usize = 0x2711048;
+            pub const dwGameEntitySystem: usize = 0x2711048;
+            pub const dwGameRules: usize = 0x255BA98;
+            pub const dwGlobalVars: usize = 0x2227F08;
+            pub const dwPlantedC4: usize = 0x24C4E20;
+            pub const dwViewRender: usize = 0x25621B0;
+            pub const dwWeaponC4: usize = 0x21B7FA0;
         };
         // engine2.dll
         pub const engine2 = struct {
