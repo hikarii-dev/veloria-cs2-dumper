@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-09-23 00:15:28.364892200 UTC
+// 2026-09-25 20:51:35.116442 UTC
 
 pub const cs2_dumper = struct {
     pub const schemas = struct {

@@ -1,24 +1,24 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-09-23 00:15:28.259476800 UTC
+// 2026-09-25 20:51:35.017302800 UTC
 
 namespace CS2Dumper {
     // Module: client.dll
     public static class Buttons {
-        public const nint attack = 0x222B040;
-        public const nint attack2 = 0x222B0D0;
-        public const nint back = 0x222B310;
-        public const nint duck = 0x222B5E0;
-        public const nint forward = 0x222B280;
-        public const nint jump = 0x222B550;
-        public const nint left = 0x222B3A0;
-        public const nint lookatweapon = 0x25709A0;
-        public const nint reload = 0x222AFB0;
-        public const nint right = 0x222B430;
-        public const nint showscores = 0x2570880;
-        public const nint sprint = 0x222AF20;
-        public const nint turnleft = 0x222B160;
-        public const nint turnright = 0x222B1F0;
-        public const nint use = 0x222B4C0;
-        public const nint zoom = 0x2570910;
+        public const nint attack = 0x222E0C0;
+        public const nint attack2 = 0x222E150;
+        public const nint back = 0x222E390;
+        public const nint duck = 0x222E660;
+        public const nint forward = 0x222E300;
+        public const nint jump = 0x222E5D0;
+        public const nint left = 0x222E420;
+        public const nint lookatweapon = 0x2573A60;
+        public const nint reload = 0x222E030;
+        public const nint right = 0x222E4B0;
+        public const nint showscores = 0x2573940;
+        public const nint sprint = 0x222DFA0;
+        public const nint turnleft = 0x222E1E0;
+        public const nint turnright = 0x222E270;
+        public const nint use = 0x222E540;
+        public const nint zoom = 0x25739D0;
     }
 }

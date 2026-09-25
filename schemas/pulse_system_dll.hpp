@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-09-23 00:15:28.316927200 UTC
+// 2026-09-25 20:51:35.069773 UTC
 
 #pragma once
 #include <cstddef>

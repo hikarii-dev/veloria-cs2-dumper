@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-09-23 00:15:28.316315200 UTC
+// 2026-09-25 20:51:35.069433900 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: pulse_system.dll

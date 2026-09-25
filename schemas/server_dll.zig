@@ -1,5 +1,5 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-09-23 00:15:28.354279500 UTC
+// 2026-09-25 20:51:35.106197200 UTC
 
 pub const cs2_dumper = struct {
     pub const schemas = struct {
@@ -9240,7 +9240,7 @@ pub const cs2_dumper = struct {
                 pub const m_bPvsModifyEntity: usize = 0x1B8; // bool
             };
             // Parent: CBasePlayerWeapon
-            // Field count: 56
+            // Field count: 57
             pub const CCSWeaponBase = struct {
                 pub const m_bRemoveable: usize = 0xEF8; // bool
                 pub const m_bPlayerAmmoStockOnPickup: usize = 0xEF9; // bool
@@ -9275,11 +9275,12 @@ pub const cs2_dumper = struct {
                 pub const m_bInSilentReloadSection: usize = 0xFC1; // bool
                 pub const m_bSilentReloadStatCounted: usize = 0xFC2; // bool
                 pub const m_flStealthHoldStartTime: usize = 0xFC4; // GameTime_t
-                pub const m_flWeaponActionPlaybackRate: usize = 0xFC8; // float32
-                pub const m_iOriginalTeamNumber: usize = 0xFCC; // int32
-                pub const m_iMostRecentTeamNumber: usize = 0xFD0; // int32
-                pub const m_bDroppedNearBuyZone: usize = 0xFD4; // bool
-                pub const m_flNextAttackRenderTimeOffset: usize = 0xFD8; // float32
+                pub const m_bReloadHeldSinceStart: usize = 0xFC8; // bool
+                pub const m_flWeaponActionPlaybackRate: usize = 0xFCC; // float32
+                pub const m_iOriginalTeamNumber: usize = 0xFD0; // int32
+                pub const m_iMostRecentTeamNumber: usize = 0xFD4; // int32
+                pub const m_bDroppedNearBuyZone: usize = 0xFD8; // bool
+                pub const m_flNextAttackRenderTimeOffset: usize = 0xFDC; // float32
                 pub const m_bCanBePickedUp: usize = 0xFF0; // bool
                 pub const m_bUseCanOverrideNextOwnerTouchTime: usize = 0xFF1; // bool
                 pub const m_nextOwnerTouchTime: usize = 0xFF4; // GameTime_t

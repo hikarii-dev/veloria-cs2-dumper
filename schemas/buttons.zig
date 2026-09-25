@@ -1,24 +1,24 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
-// 2026-09-23 00:15:28.261305300 UTC
+// 2026-09-25 20:51:35.018626800 UTC
 
 pub const cs2_dumper = struct {
     // Module: client.dll
     pub const buttons = struct {
-        pub const attack: usize = 0x222B040;
-        pub const attack2: usize = 0x222B0D0;
-        pub const back: usize = 0x222B310;
-        pub const duck: usize = 0x222B5E0;
-        pub const forward: usize = 0x222B280;
-        pub const jump: usize = 0x222B550;
-        pub const left: usize = 0x222B3A0;
-        pub const lookatweapon: usize = 0x25709A0;
-        pub const reload: usize = 0x222AFB0;
-        pub const right: usize = 0x222B430;
-        pub const showscores: usize = 0x2570880;
-        pub const sprint: usize = 0x222AF20;
-        pub const turnleft: usize = 0x222B160;
-        pub const turnright: usize = 0x222B1F0;
-        pub const use: usize = 0x222B4C0;
-        pub const zoom: usize = 0x2570910;
+        pub const attack: usize = 0x222E0C0;
+        pub const attack2: usize = 0x222E150;
+        pub const back: usize = 0x222E390;
+        pub const duck: usize = 0x222E660;
+        pub const forward: usize = 0x222E300;
+        pub const jump: usize = 0x222E5D0;
+        pub const left: usize = 0x222E420;
+        pub const lookatweapon: usize = 0x2573A60;
+        pub const reload: usize = 0x222E030;
+        pub const right: usize = 0x222E4B0;
+        pub const showscores: usize = 0x2573940;
+        pub const sprint: usize = 0x222DFA0;
+        pub const turnleft: usize = 0x222E1E0;
+        pub const turnright: usize = 0x222E270;
+        pub const use: usize = 0x222E540;
+        pub const zoom: usize = 0x25739D0;
     };
 };
