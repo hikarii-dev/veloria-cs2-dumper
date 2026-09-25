@@ -3,18 +3,18 @@
 namespace CS2Dumper.Offsets {
     // client.dll
     public static class Client {
-        public const nint Globals = 0x2229F88;
-        public const nint LocalController = 0x2535598;
-        public const nint GlobalEntityList = 0x23683F0;
-        public const nint ViewMatrix = 0x25639A0;
-        public const nint dwCSGOInput = 0x222D968;
-        public const nint dwEntityList = 0x27130E8;
-        public const nint dwGameEntitySystem = 0x27130E8;
-        public const nint dwGameRules = 0x255A858;
-        public const nint dwGlobalVars = 0x2229F88;
-        public const nint dwPlantedC4 = 0x24C7380;
-        public const nint dwViewRender = 0x2564260;
-        public const nint dwWeaponC4 = 0x21B9FA0;
+        public const nint Globals = 0x222BF88;
+        public const nint LocalController = 0x2537628;
+        public const nint GlobalEntityList = 0x236A460;
+        public const nint ViewMatrix = 0x2565A20;
+        public const nint dwCSGOInput = 0x222F968;
+        public const nint dwEntityList = 0x27151A8;
+        public const nint dwGameEntitySystem = 0x27151A8;
+        public const nint dwGameRules = 0x255C8D8;
+        public const nint dwGlobalVars = 0x222BF88;
+        public const nint dwPlantedC4 = 0x24C9290;
+        public const nint dwViewRender = 0x25662E0;
+        public const nint dwWeaponC4 = 0x21BBFA0;
     }
     // engine2.dll
     public static class Engine2 {
