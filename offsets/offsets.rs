@@ -8,8 +8,8 @@ pub mod offsets {
         pub const GLOBAL_ENTITY_LIST: usize = 0x236A460;
         pub const VIEW_MATRIX: usize = 0x2565A20;
         pub const DW_CSGO_INPUT: usize = 0x222F968;
-        pub const DW_ENTITY_LIST: usize = 0x27151A8;
-        pub const DW_GAME_ENTITY_SYSTEM: usize = 0x27151A8;
+        pub const DW_ENTITY_LIST: usize = 0x27151E8;
+        pub const DW_GAME_ENTITY_SYSTEM: usize = 0x27151E8;
         pub const DW_GAME_RULES: usize = 0x255C8D8;
         pub const DW_GLOBAL_VARS: usize = 0x222BF88;
         pub const DW_PLANTED_C4: usize = 0x24C9290;
