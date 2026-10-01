@@ -3,27 +3,27 @@
 namespace CS2Dumper.Offsets {
     // client.dll
     public static class Client {
-        public const nint Globals = 0x222BF88;
-        public const nint LocalController = 0x2537628;
-        public const nint GlobalEntityList = 0x236A460;
-        public const nint ViewMatrix = 0x2565A20;
-        public const nint dwCSGOInput = 0x222F968;
-        public const nint dwEntityList = 0x27151E8;
-        public const nint dwGameEntitySystem = 0x27151E8;
-        public const nint dwGameRules = 0x255C8D8;
-        public const nint dwGlobalVars = 0x222BF88;
-        public const nint dwPlantedC4 = 0x24C9290;
-        public const nint dwViewRender = 0x25662E0;
+        public const nint Globals = 0x222BE98;
+        public const nint LocalController = 0x2538008;
+        public const nint GlobalEntityList = 0x236A9E0;
+        public const nint ViewMatrix = 0x2566910;
+        public const nint dwCSGOInput = 0x222F878;
+        public const nint dwEntityList = 0x2715828;
+        public const nint dwGameEntitySystem = 0x2715828;
+        public const nint dwGameRules = 0x255CE50;
+        public const nint dwGlobalVars = 0x222BE98;
+        public const nint dwPlantedC4 = 0x24C88D0;
+        public const nint dwViewRender = 0x2565D20;
         public const nint dwWeaponC4 = 0x21BBFA0;
     }
     // engine2.dll
     public static class Engine2 {
-        public const nint BuildInfo = 0x926A00;
-        public const nint NetworkGameClientInstance = 0x91B1C0;
-        public const nint dwBuildNumber = 0x61F930;
-        public const nint dwNetworkGameClient = 0x91B1C0;
-        public const nint dwWindowHeight = 0x91F544;
-        public const nint dwWindowWidth = 0x91F540;
+        public const nint BuildInfo = 0x9267F0;
+        public const nint NetworkGameClientInstance = 0x91AFC0;
+        public const nint dwBuildNumber = 0x61F730;
+        public const nint dwNetworkGameClient = 0x91AFC0;
+        public const nint dwWindowHeight = 0x91F334;
+        public const nint dwWindowWidth = 0x91F330;
     }
     // tier0.dll
     public static class Tier0 {
@@ -39,6 +39,6 @@ namespace CS2Dumper.Offsets {
     }
     // soundsystem.dll
     public static class Soundsystem {
-        public const nint dwSoundSystem = 0x6497F0;
+        public const nint dwSoundSystem = 0x649800;
     }
 }
