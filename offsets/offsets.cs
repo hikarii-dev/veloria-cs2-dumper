@@ -8,8 +8,8 @@ namespace CS2Dumper.Offsets {
         public const nint GlobalEntityList = 0x236A9E0;
         public const nint ViewMatrix = 0x2566910;
         public const nint dwCSGOInput = 0x222F878;
-        public const nint dwEntityList = 0x2715828;
-        public const nint dwGameEntitySystem = 0x2715828;
+        public const nint dwEntityList = 0x2715818;
+        public const nint dwGameEntitySystem = 0x2715818;
         public const nint dwGameRules = 0x255CE50;
         public const nint dwGlobalVars = 0x222BE98;
         public const nint dwPlantedC4 = 0x24C88D0;

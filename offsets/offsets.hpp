@@ -11,8 +11,8 @@ namespace offsets {
         constexpr std::ptrdiff_t GlobalEntityList = 0x236A9E0;
         constexpr std::ptrdiff_t ViewMatrix = 0x2566910;
         constexpr std::ptrdiff_t dwCSGOInput = 0x222F878;
-        constexpr std::ptrdiff_t dwEntityList = 0x2715828;
-        constexpr std::ptrdiff_t dwGameEntitySystem = 0x2715828;
+        constexpr std::ptrdiff_t dwEntityList = 0x2715818;
+        constexpr std::ptrdiff_t dwGameEntitySystem = 0x2715818;
         constexpr std::ptrdiff_t dwGameRules = 0x255CE50;
         constexpr std::ptrdiff_t dwGlobalVars = 0x222BE98;
         constexpr std::ptrdiff_t dwPlantedC4 = 0x24C88D0;
