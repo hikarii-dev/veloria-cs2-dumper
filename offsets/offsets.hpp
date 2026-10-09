@@ -6,18 +6,18 @@ namespace cs2_dumper {
 namespace offsets {
     // client.dll
     namespace client {
-        constexpr std::ptrdiff_t Globals = 0x222DE98;
-        constexpr std::ptrdiff_t LocalController = 0x253A068;
-        constexpr std::ptrdiff_t GlobalEntityList = 0x236CA70;
-        constexpr std::ptrdiff_t ViewMatrix = 0x2567FA0;
-        constexpr std::ptrdiff_t dwCSGOInput = 0x2231878;
-        constexpr std::ptrdiff_t dwEntityList = 0x2717828;
-        constexpr std::ptrdiff_t dwGameEntitySystem = 0x2717828;
-        constexpr std::ptrdiff_t dwGameRules = 0x255EE50;
-        constexpr std::ptrdiff_t dwGlobalVars = 0x222DE98;
-        constexpr std::ptrdiff_t dwPlantedC4 = 0x24CA930;
-        constexpr std::ptrdiff_t dwViewRender = 0x2568968;
-        constexpr std::ptrdiff_t dwWeaponC4 = 0x21BDFA0;
+        constexpr std::ptrdiff_t Globals = 0x2228090;
+        constexpr std::ptrdiff_t LocalController = 0x25338A8;
+        constexpr std::ptrdiff_t GlobalEntityList = 0x2366770;
+        constexpr std::ptrdiff_t ViewMatrix = 0x2561CD0;
+        constexpr std::ptrdiff_t dwCSGOInput = 0x222B778;
+        constexpr std::ptrdiff_t dwEntityList = 0x2711598;
+        constexpr std::ptrdiff_t dwGameEntitySystem = 0x2711598;
+        constexpr std::ptrdiff_t dwGameRules = 0x255BE80;
+        constexpr std::ptrdiff_t dwGlobalVars = 0x2228090;
+        constexpr std::ptrdiff_t dwPlantedC4 = 0x24C2248;
+        constexpr std::ptrdiff_t dwViewRender = 0x2562698;
+        constexpr std::ptrdiff_t dwWeaponC4 = 0x21B7F90;
     }
     // engine2.dll
     namespace engine2 {
