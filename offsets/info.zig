@@ -2,5 +2,5 @@
 
 pub const cs2_dumper = struct {
 pub const build_number: u32 = 25815307;
-pub const timestamp: []const u8 = "2026-10-10 17:40:33 UTC";
+pub const timestamp: []const u8 = "2026-10-10 21:12:05 UTC";
 };
