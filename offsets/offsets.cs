@@ -3,18 +3,18 @@
 namespace CS2Dumper.Offsets {
     // client.dll
     public static class Client {
-        public const nint Globals = 0x2228090;
-        public const nint LocalController = 0x25338A8;
-        public const nint GlobalEntityList = 0x2366770;
-        public const nint ViewMatrix = 0x2561CD0;
-        public const nint dwCSGOInput = 0x222B778;
-        public const nint dwEntityList = 0x2711598;
-        public const nint dwGameEntitySystem = 0x2711598;
-        public const nint dwGameRules = 0x255BE80;
-        public const nint dwGlobalVars = 0x2228090;
-        public const nint dwPlantedC4 = 0x24C2248;
-        public const nint dwViewRender = 0x2562698;
-        public const nint dwWeaponC4 = 0x21B7F90;
+        public const nint Globals = 0x2230090;
+        public const nint LocalController = 0x253CB78;
+        public const nint GlobalEntityList = 0x236FA70;
+        public const nint ViewMatrix = 0x256B020;
+        public const nint dwCSGOInput = 0x2233778;
+        public const nint dwEntityList = 0x271A908;
+        public const nint dwGameEntitySystem = 0x271A908;
+        public const nint dwGameRules = 0x25651D0;
+        public const nint dwGlobalVars = 0x2230090;
+        public const nint dwPlantedC4 = 0x24CB3C0;
+        public const nint dwViewRender = 0x256B9E8;
+        public const nint dwWeaponC4 = 0x21BFF90;
     }
     // engine2.dll
     public static class Engine2 {
@@ -22,8 +22,8 @@ namespace CS2Dumper.Offsets {
         public const nint NetworkGameClientInstance = 0x91AFC0;
         public const nint dwBuildNumber = 0x61F730;
         public const nint dwNetworkGameClient = 0x91AFC0;
-        public const nint dwWindowHeight = 0x91F334;
-        public const nint dwWindowWidth = 0x91F330;
+        public const nint dwWindowHeight = 0x91F33C;
+        public const nint dwWindowWidth = 0x91F338;
     }
     // tier0.dll
     public static class Tier0 {

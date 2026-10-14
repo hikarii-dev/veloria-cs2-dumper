@@ -1,26 +1,26 @@
 {
   "offsets": {
     "client.dll": {
-      "GlobalEntityList": 37119856,
-      "Globals": 35815568,
-      "LocalController": 39008424,
-      "ViewMatrix": 39197904,
-      "dwCSGOInput": 35829624,
-      "dwEntityList": 40965528,
-      "dwGameEntitySystem": 40965528,
-      "dwGameRules": 39173760,
-      "dwGlobalVars": 35815568,
-      "dwPlantedC4": 38543944,
-      "dwViewRender": 39200408,
-      "dwWeaponC4": 35356560
+      "GlobalEntityList": 37157488,
+      "Globals": 35848336,
+      "LocalController": 39046008,
+      "ViewMatrix": 39235616,
+      "dwCSGOInput": 35862392,
+      "dwEntityList": 41003272,
+      "dwGameEntitySystem": 41003272,
+      "dwGameRules": 39211472,
+      "dwGlobalVars": 35848336,
+      "dwPlantedC4": 38581184,
+      "dwViewRender": 39238120,
+      "dwWeaponC4": 35389328
     },
     "engine2.dll": {
       "BuildInfo": 9594864,
       "NetworkGameClientInstance": 9547712,
       "dwBuildNumber": 6420272,
       "dwNetworkGameClient": 9547712,
-      "dwWindowHeight": 9564980,
-      "dwWindowWidth": 9564976
+      "dwWindowHeight": 9564988,
+      "dwWindowWidth": 9564984
     },
     "inputsystem.dll": {
       "dwInputSystem": 289728
