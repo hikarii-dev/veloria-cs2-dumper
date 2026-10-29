@@ -1,26 +1,26 @@
 {
   "offsets": {
     "client.dll": {
-      "GlobalEntityList": 37165680,
-      "Globals": 35856520,
-      "LocalController": 39055096,
-      "ViewMatrix": 39243744,
-      "dwCSGOInput": 35870584,
-      "dwEntityList": 41011384,
-      "dwGameEntitySystem": 41011384,
-      "dwGameRules": 39219592,
-      "dwGlobalVars": 35856520,
-      "dwPlantedC4": 38590768,
-      "dwViewRender": 39246248,
-      "dwWeaponC4": 35397536
+      "GlobalEntityList": 37174256,
+      "Globals": 35864840,
+      "LocalController": 39064568,
+      "ViewMatrix": 39252432,
+      "dwCSGOInput": 35878904,
+      "dwEntityList": 41020168,
+      "dwGameEntitySystem": 41020168,
+      "dwGameRules": 39228280,
+      "dwGlobalVars": 35864840,
+      "dwPlantedC4": 38599520,
+      "dwViewRender": 39254936,
+      "dwWeaponC4": 35405728
     },
     "engine2.dll": {
       "BuildInfo": 10241200,
       "NetworkGameClientInstance": 10193088,
       "dwBuildNumber": 7063408,
       "dwNetworkGameClient": 10193088,
-      "dwWindowHeight": 10211316,
-      "dwWindowWidth": 10211312
+      "dwWindowHeight": 10211308,
+      "dwWindowWidth": 10211304
     },
     "inputsystem.dll": {
       "dwInputSystem": 289728
@@ -29,7 +29,7 @@
       "SchemaSystem": 485136
     },
     "soundsystem.dll": {
-      "dwSoundSystem": 6580304
+      "dwSoundSystem": 6580224
     },
     "tier0.dll": {
       "CCVars": 3851888

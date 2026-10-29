@@ -3,18 +3,18 @@
 namespace CS2Dumper.Offsets {
     // client.dll
     public static class Client {
-        public const nint Globals = 0x2232088;
-        public const nint LocalController = 0x253EEF8;
-        public const nint GlobalEntityList = 0x2371A70;
-        public const nint ViewMatrix = 0x256CFE0;
-        public const nint dwCSGOInput = 0x2235778;
-        public const nint dwEntityList = 0x271C8B8;
-        public const nint dwGameEntitySystem = 0x271C8B8;
-        public const nint dwGameRules = 0x2567188;
-        public const nint dwGlobalVars = 0x2232088;
-        public const nint dwPlantedC4 = 0x24CD930;
-        public const nint dwViewRender = 0x256D9A8;
-        public const nint dwWeaponC4 = 0x21C1FA0;
+        public const nint Globals = 0x2234108;
+        public const nint LocalController = 0x25413F8;
+        public const nint GlobalEntityList = 0x2373BF0;
+        public const nint ViewMatrix = 0x256F1D0;
+        public const nint dwCSGOInput = 0x22377F8;
+        public const nint dwEntityList = 0x271EB08;
+        public const nint dwGameEntitySystem = 0x271EB08;
+        public const nint dwGameRules = 0x2569378;
+        public const nint dwGlobalVars = 0x2234108;
+        public const nint dwPlantedC4 = 0x24CFB60;
+        public const nint dwViewRender = 0x256FB98;
+        public const nint dwWeaponC4 = 0x21C3FA0;
     }
     // engine2.dll
     public static class Engine2 {
@@ -22,8 +22,8 @@ namespace CS2Dumper.Offsets {
         public const nint NetworkGameClientInstance = 0x9B88C0;
         public const nint dwBuildNumber = 0x6BC770;
         public const nint dwNetworkGameClient = 0x9B88C0;
-        public const nint dwWindowHeight = 0x9BCFF4;
-        public const nint dwWindowWidth = 0x9BCFF0;
+        public const nint dwWindowHeight = 0x9BCFEC;
+        public const nint dwWindowWidth = 0x9BCFE8;
     }
     // tier0.dll
     public static class Tier0 {
@@ -39,6 +39,6 @@ namespace CS2Dumper.Offsets {
     }
     // soundsystem.dll
     public static class Soundsystem {
-        public const nint dwSoundSystem = 0x646850;
+        public const nint dwSoundSystem = 0x646800;
     }
 }

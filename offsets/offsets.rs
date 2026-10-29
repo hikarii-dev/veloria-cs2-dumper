@@ -3,18 +3,18 @@
 pub mod offsets {
     // client.dll
     pub mod client {
-        pub const GLOBALS: usize = 0x2232088;
-        pub const LOCAL_CONTROLLER: usize = 0x253EEF8;
-        pub const GLOBAL_ENTITY_LIST: usize = 0x2371A70;
-        pub const VIEW_MATRIX: usize = 0x256CFE0;
-        pub const DW_CSGO_INPUT: usize = 0x2235778;
-        pub const DW_ENTITY_LIST: usize = 0x271C8B8;
-        pub const DW_GAME_ENTITY_SYSTEM: usize = 0x271C8B8;
-        pub const DW_GAME_RULES: usize = 0x2567188;
-        pub const DW_GLOBAL_VARS: usize = 0x2232088;
-        pub const DW_PLANTED_C4: usize = 0x24CD930;
-        pub const DW_VIEW_RENDER: usize = 0x256D9A8;
-        pub const DW_WEAPON_C4: usize = 0x21C1FA0;
+        pub const GLOBALS: usize = 0x2234108;
+        pub const LOCAL_CONTROLLER: usize = 0x25413F8;
+        pub const GLOBAL_ENTITY_LIST: usize = 0x2373BF0;
+        pub const VIEW_MATRIX: usize = 0x256F1D0;
+        pub const DW_CSGO_INPUT: usize = 0x22377F8;
+        pub const DW_ENTITY_LIST: usize = 0x271EB08;
+        pub const DW_GAME_ENTITY_SYSTEM: usize = 0x271EB08;
+        pub const DW_GAME_RULES: usize = 0x2569378;
+        pub const DW_GLOBAL_VARS: usize = 0x2234108;
+        pub const DW_PLANTED_C4: usize = 0x24CFB60;
+        pub const DW_VIEW_RENDER: usize = 0x256FB98;
+        pub const DW_WEAPON_C4: usize = 0x21C3FA0;
     }
     // engine2.dll
     pub mod engine2 {
@@ -22,8 +22,8 @@ pub mod offsets {
         pub const NETWORK_GAME_CLIENT_INSTANCE: usize = 0x9B88C0;
         pub const DW_BUILD_NUMBER: usize = 0x6BC770;
         pub const DW_NETWORK_GAME_CLIENT: usize = 0x9B88C0;
-        pub const DW_WINDOW_HEIGHT: usize = 0x9BCFF4;
-        pub const DW_WINDOW_WIDTH: usize = 0x9BCFF0;
+        pub const DW_WINDOW_HEIGHT: usize = 0x9BCFEC;
+        pub const DW_WINDOW_WIDTH: usize = 0x9BCFE8;
     }
     // tier0.dll
     pub mod tier0 {
@@ -39,6 +39,6 @@ pub mod offsets {
     }
     // soundsystem.dll
     pub mod soundsystem {
-        pub const DW_SOUND_SYSTEM: usize = 0x646850;
+        pub const DW_SOUND_SYSTEM: usize = 0x646800;
     }
 }

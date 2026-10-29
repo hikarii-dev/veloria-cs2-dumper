@@ -6,18 +6,18 @@ namespace cs2_dumper {
 namespace offsets {
     // client.dll
     namespace client {
-        constexpr std::ptrdiff_t Globals = 0x2232088;
-        constexpr std::ptrdiff_t LocalController = 0x253EEF8;
-        constexpr std::ptrdiff_t GlobalEntityList = 0x2371A70;
-        constexpr std::ptrdiff_t ViewMatrix = 0x256CFE0;
-        constexpr std::ptrdiff_t dwCSGOInput = 0x2235778;
-        constexpr std::ptrdiff_t dwEntityList = 0x271C8B8;
-        constexpr std::ptrdiff_t dwGameEntitySystem = 0x271C8B8;
-        constexpr std::ptrdiff_t dwGameRules = 0x2567188;
-        constexpr std::ptrdiff_t dwGlobalVars = 0x2232088;
-        constexpr std::ptrdiff_t dwPlantedC4 = 0x24CD930;
-        constexpr std::ptrdiff_t dwViewRender = 0x256D9A8;
-        constexpr std::ptrdiff_t dwWeaponC4 = 0x21C1FA0;
+        constexpr std::ptrdiff_t Globals = 0x2234108;
+        constexpr std::ptrdiff_t LocalController = 0x25413F8;
+        constexpr std::ptrdiff_t GlobalEntityList = 0x2373BF0;
+        constexpr std::ptrdiff_t ViewMatrix = 0x256F1D0;
+        constexpr std::ptrdiff_t dwCSGOInput = 0x22377F8;
+        constexpr std::ptrdiff_t dwEntityList = 0x271EB08;
+        constexpr std::ptrdiff_t dwGameEntitySystem = 0x271EB08;
+        constexpr std::ptrdiff_t dwGameRules = 0x2569378;
+        constexpr std::ptrdiff_t dwGlobalVars = 0x2234108;
+        constexpr std::ptrdiff_t dwPlantedC4 = 0x24CFB60;
+        constexpr std::ptrdiff_t dwViewRender = 0x256FB98;
+        constexpr std::ptrdiff_t dwWeaponC4 = 0x21C3FA0;
     }
     // engine2.dll
     namespace engine2 {
@@ -25,8 +25,8 @@ namespace offsets {
         constexpr std::ptrdiff_t NetworkGameClientInstance = 0x9B88C0;
         constexpr std::ptrdiff_t dwBuildNumber = 0x6BC770;
         constexpr std::ptrdiff_t dwNetworkGameClient = 0x9B88C0;
-        constexpr std::ptrdiff_t dwWindowHeight = 0x9BCFF4;
-        constexpr std::ptrdiff_t dwWindowWidth = 0x9BCFF0;
+        constexpr std::ptrdiff_t dwWindowHeight = 0x9BCFEC;
+        constexpr std::ptrdiff_t dwWindowWidth = 0x9BCFE8;
     }
     // tier0.dll
     namespace tier0 {
@@ -42,7 +42,7 @@ namespace offsets {
     }
     // soundsystem.dll
     namespace soundsystem {
-        constexpr std::ptrdiff_t dwSoundSystem = 0x646850;
+        constexpr std::ptrdiff_t dwSoundSystem = 0x646800;
     }
 } // namespace offsets
 } // namespace cs2_dumper
