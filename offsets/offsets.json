@@ -3,15 +3,15 @@
     "client.dll": {
       "GlobalEntityList": 37174256,
       "Globals": 35864840,
-      "LocalController": 39064568,
-      "ViewMatrix": 39252432,
+      "LocalController": 39064888,
+      "ViewMatrix": 39252560,
       "dwCSGOInput": 35878904,
-      "dwEntityList": 41020200,
-      "dwGameEntitySystem": 41020200,
-      "dwGameRules": 39228280,
+      "dwEntityList": 41020328,
+      "dwGameEntitySystem": 41020328,
+      "dwGameRules": 39228408,
       "dwGlobalVars": 35864840,
       "dwPlantedC4": 38599520,
-      "dwViewRender": 39254936,
+      "dwViewRender": 39255064,
       "dwWeaponC4": 35405728
     },
     "engine2.dll": {
