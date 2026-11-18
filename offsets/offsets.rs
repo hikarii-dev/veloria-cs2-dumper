@@ -3,18 +3,18 @@
 pub mod offsets {
     // client.dll
     pub mod client {
-        pub const GLOBALS: usize = 0x2221AB8;
-        pub const LOCAL_CONTROLLER: usize = 0x252B0C8;
-        pub const GLOBAL_ENTITY_LIST: usize = 0x235DB70;
-        pub const VIEW_MATRIX: usize = 0x2559640;
-        pub const DW_CSGO_INPUT: usize = 0x22251A8;
-        pub const DW_ENTITY_LIST: usize = 0x2709010;
-        pub const DW_GAME_ENTITY_SYSTEM: usize = 0x2709010;
-        pub const DW_GAME_RULES: usize = 0x25537E8;
-        pub const DW_GLOBAL_VARS: usize = 0x2221AB8;
-        pub const DW_PLANTED_C4: usize = 0x24B9B90;
-        pub const DW_VIEW_RENDER: usize = 0x255A008;
-        pub const DW_WEAPON_C4: usize = 0x21B1F70;
+        pub const GLOBALS: usize = 0x2223AD0;
+        pub const LOCAL_CONTROLLER: usize = 0x252ED78;
+        pub const GLOBAL_ENTITY_LIST: usize = 0x23612E0;
+        pub const VIEW_MATRIX: usize = 0x255CE50;
+        pub const DW_CSGO_INPUT: usize = 0x2227228;
+        pub const DW_ENTITY_LIST: usize = 0x270C680;
+        pub const DW_GAME_ENTITY_SYSTEM: usize = 0x270C680;
+        pub const DW_GAME_RULES: usize = 0x2556E78;
+        pub const DW_GLOBAL_VARS: usize = 0x2223AD0;
+        pub const DW_PLANTED_C4: usize = 0x0 /* ERROR */;
+        pub const DW_VIEW_RENDER: usize = 0x255D818;
+        pub const DW_WEAPON_C4: usize = 0x21B3F70;
     }
     // engine2.dll
     pub mod engine2 {
