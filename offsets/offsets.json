@@ -15,12 +15,12 @@
       "dwWeaponC4": 35340144
     },
     "engine2.dll": {
-      "BuildInfo": 10205040,
-      "NetworkGameClientInstance": 10156848,
+      "BuildInfo": 10205184,
+      "NetworkGameClientInstance": 10156944,
       "dwBuildNumber": 7033984,
-      "dwNetworkGameClient": 10156848,
-      "dwWindowHeight": 10175124,
-      "dwWindowWidth": 10175120
+      "dwNetworkGameClient": 10156944,
+      "dwWindowHeight": 10175212,
+      "dwWindowWidth": 10175208
     },
     "inputsystem.dll": {
       "dwInputSystem": 289728

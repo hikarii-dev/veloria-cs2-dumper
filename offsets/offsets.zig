@@ -19,12 +19,12 @@ pub const cs2_dumper = struct {
         };
         // engine2.dll
         pub const engine2 = struct {
-            pub const BuildInfo: usize = 0x9BB770;
-            pub const NetworkGameClientInstance: usize = 0x9AFB30;
+            pub const BuildInfo: usize = 0x9BB800;
+            pub const NetworkGameClientInstance: usize = 0x9AFB90;
             pub const dwBuildNumber: usize = 0x6B5480;
-            pub const dwNetworkGameClient: usize = 0x9AFB30;
-            pub const dwWindowHeight: usize = 0x9B4294;
-            pub const dwWindowWidth: usize = 0x9B4290;
+            pub const dwNetworkGameClient: usize = 0x9AFB90;
+            pub const dwWindowHeight: usize = 0x9B42EC;
+            pub const dwWindowWidth: usize = 0x9B42E8;
         };
         // tier0.dll
         pub const tier0 = struct {

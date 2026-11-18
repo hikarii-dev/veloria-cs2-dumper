@@ -18,12 +18,12 @@ namespace CS2Dumper.Offsets {
     }
     // engine2.dll
     public static class Engine2 {
-        public const nint BuildInfo = 0x9BB770;
-        public const nint NetworkGameClientInstance = 0x9AFB30;
+        public const nint BuildInfo = 0x9BB800;
+        public const nint NetworkGameClientInstance = 0x9AFB90;
         public const nint dwBuildNumber = 0x6B5480;
-        public const nint dwNetworkGameClient = 0x9AFB30;
-        public const nint dwWindowHeight = 0x9B4294;
-        public const nint dwWindowWidth = 0x9B4290;
+        public const nint dwNetworkGameClient = 0x9AFB90;
+        public const nint dwWindowHeight = 0x9B42EC;
+        public const nint dwWindowWidth = 0x9B42E8;
     }
     // tier0.dll
     public static class Tier0 {

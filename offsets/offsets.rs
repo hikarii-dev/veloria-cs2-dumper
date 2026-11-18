@@ -18,12 +18,12 @@ pub mod offsets {
     }
     // engine2.dll
     pub mod engine2 {
-        pub const BUILD_INFO: usize = 0x9BB770;
-        pub const NETWORK_GAME_CLIENT_INSTANCE: usize = 0x9AFB30;
+        pub const BUILD_INFO: usize = 0x9BB800;
+        pub const NETWORK_GAME_CLIENT_INSTANCE: usize = 0x9AFB90;
         pub const DW_BUILD_NUMBER: usize = 0x6B5480;
-        pub const DW_NETWORK_GAME_CLIENT: usize = 0x9AFB30;
-        pub const DW_WINDOW_HEIGHT: usize = 0x9B4294;
-        pub const DW_WINDOW_WIDTH: usize = 0x9B4290;
+        pub const DW_NETWORK_GAME_CLIENT: usize = 0x9AFB90;
+        pub const DW_WINDOW_HEIGHT: usize = 0x9B42EC;
+        pub const DW_WINDOW_WIDTH: usize = 0x9B42E8;
     }
     // tier0.dll
     pub mod tier0 {

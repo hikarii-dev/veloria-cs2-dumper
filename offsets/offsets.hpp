@@ -21,12 +21,12 @@ namespace offsets {
     }
     // engine2.dll
     namespace engine2 {
-        constexpr std::ptrdiff_t BuildInfo = 0x9BB770;
-        constexpr std::ptrdiff_t NetworkGameClientInstance = 0x9AFB30;
+        constexpr std::ptrdiff_t BuildInfo = 0x9BB800;
+        constexpr std::ptrdiff_t NetworkGameClientInstance = 0x9AFB90;
         constexpr std::ptrdiff_t dwBuildNumber = 0x6B5480;
-        constexpr std::ptrdiff_t dwNetworkGameClient = 0x9AFB30;
-        constexpr std::ptrdiff_t dwWindowHeight = 0x9B4294;
-        constexpr std::ptrdiff_t dwWindowWidth = 0x9B4290;
+        constexpr std::ptrdiff_t dwNetworkGameClient = 0x9AFB90;
+        constexpr std::ptrdiff_t dwWindowHeight = 0x9B42EC;
+        constexpr std::ptrdiff_t dwWindowWidth = 0x9B42E8;
     }
     // tier0.dll
     namespace tier0 {
