@@ -3,27 +3,27 @@
 pub mod offsets {
     // client.dll
     pub mod client {
-        pub const GLOBALS: usize = 0x2223AD0;
-        pub const LOCAL_CONTROLLER: usize = 0x252F300;
-        pub const GLOBAL_ENTITY_LIST: usize = 0x2361860;
-        pub const VIEW_MATRIX: usize = 0x255D3D0;
-        pub const DW_CSGO_INPUT: usize = 0x2227228;
-        pub const DW_ENTITY_LIST: usize = 0x270D5B0;
-        pub const DW_GAME_ENTITY_SYSTEM: usize = 0x270D5B0;
-        pub const DW_GAME_RULES: usize = 0x25573F8;
-        pub const DW_GLOBAL_VARS: usize = 0x2223AD0;
+        pub const GLOBALS: usize = 0x222AAD0;
+        pub const LOCAL_CONTROLLER: usize = 0x2536300;
+        pub const GLOBAL_ENTITY_LIST: usize = 0x2368860;
+        pub const VIEW_MATRIX: usize = 0x25643D0;
+        pub const DW_CSGO_INPUT: usize = 0x222E228;
+        pub const DW_ENTITY_LIST: usize = 0x27145B0;
+        pub const DW_GAME_ENTITY_SYSTEM: usize = 0x27145B0;
+        pub const DW_GAME_RULES: usize = 0x255E3F8;
+        pub const DW_GLOBAL_VARS: usize = 0x222AAD0;
         pub const DW_PLANTED_C4: usize = 0x0 /* ERROR */;
-        pub const DW_VIEW_RENDER: usize = 0x255DD98;
-        pub const DW_WEAPON_C4: usize = 0x21B3F70;
+        pub const DW_VIEW_RENDER: usize = 0x2564D98;
+        pub const DW_WEAPON_C4: usize = 0x21BAF70;
     }
     // engine2.dll
     pub mod engine2 {
-        pub const BUILD_INFO: usize = 0x9BB800;
-        pub const NETWORK_GAME_CLIENT_INSTANCE: usize = 0x9AFB90;
+        pub const BUILD_INFO: usize = 0x9BB7F0;
+        pub const NETWORK_GAME_CLIENT_INSTANCE: usize = 0x9AFB70;
         pub const DW_BUILD_NUMBER: usize = 0x6B5480;
-        pub const DW_NETWORK_GAME_CLIENT: usize = 0x9AFB90;
-        pub const DW_WINDOW_HEIGHT: usize = 0x9B42EC;
-        pub const DW_WINDOW_WIDTH: usize = 0x9B42E8;
+        pub const DW_NETWORK_GAME_CLIENT: usize = 0x9AFB70;
+        pub const DW_WINDOW_HEIGHT: usize = 0x9B42D4;
+        pub const DW_WINDOW_WIDTH: usize = 0x9B42D0;
     }
     // tier0.dll
     pub mod tier0 {

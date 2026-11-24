@@ -1,6 +1,6 @@
 // Generated using https://github.com/hikarii-dev/veloria-cs2-dumper
 
 pub mod info {
-pub const BUILD_NUMBER: u32 = 26798866;
-pub const TIMESTAMP: &str = "2026-11-23 22:34:24 UTC";
+pub const BUILD_NUMBER: u32 = 26879581;
+pub const TIMESTAMP: &str = "2026-11-24 06:46:32 UTC";
 }

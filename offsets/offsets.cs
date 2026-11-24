@@ -3,27 +3,27 @@
 namespace CS2Dumper.Offsets {
     // client.dll
     public static class Client {
-        public const nint Globals = 0x2223AD0;
-        public const nint LocalController = 0x252F300;
-        public const nint GlobalEntityList = 0x2361860;
-        public const nint ViewMatrix = 0x255D3D0;
-        public const nint dwCSGOInput = 0x2227228;
-        public const nint dwEntityList = 0x270D5B0;
-        public const nint dwGameEntitySystem = 0x270D5B0;
-        public const nint dwGameRules = 0x25573F8;
-        public const nint dwGlobalVars = 0x2223AD0;
+        public const nint Globals = 0x222AAD0;
+        public const nint LocalController = 0x2536300;
+        public const nint GlobalEntityList = 0x2368860;
+        public const nint ViewMatrix = 0x25643D0;
+        public const nint dwCSGOInput = 0x222E228;
+        public const nint dwEntityList = 0x27145B0;
+        public const nint dwGameEntitySystem = 0x27145B0;
+        public const nint dwGameRules = 0x255E3F8;
+        public const nint dwGlobalVars = 0x222AAD0;
         public const nint dwPlantedC4 = 0x0 /* ERROR */;
-        public const nint dwViewRender = 0x255DD98;
-        public const nint dwWeaponC4 = 0x21B3F70;
+        public const nint dwViewRender = 0x2564D98;
+        public const nint dwWeaponC4 = 0x21BAF70;
     }
     // engine2.dll
     public static class Engine2 {
-        public const nint BuildInfo = 0x9BB800;
-        public const nint NetworkGameClientInstance = 0x9AFB90;
+        public const nint BuildInfo = 0x9BB7F0;
+        public const nint NetworkGameClientInstance = 0x9AFB70;
         public const nint dwBuildNumber = 0x6B5480;
-        public const nint dwNetworkGameClient = 0x9AFB90;
-        public const nint dwWindowHeight = 0x9B42EC;
-        public const nint dwWindowWidth = 0x9B42E8;
+        public const nint dwNetworkGameClient = 0x9AFB70;
+        public const nint dwWindowHeight = 0x9B42D4;
+        public const nint dwWindowWidth = 0x9B42D0;
     }
     // tier0.dll
     public static class Tier0 {
